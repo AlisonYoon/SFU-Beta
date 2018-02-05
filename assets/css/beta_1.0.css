@@ -341,10 +341,14 @@ body {
   min-width: 0;
   color: #fff;
   cursor: pointer;
+  align-items: center;
   text-decoration: none;
 }
 .room-list-item-wrapper a .camera-status-icon {
   margin-right: 11px;
+  width: 35px;
+  height: 30px;
+  background: url("../images/icon/video-on.png") no-repeat;
 }
 .room-list-item-wrapper button.video-sound {
   width: 18px;
