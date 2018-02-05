@@ -261,11 +261,20 @@ body {
   z-index: 2;
   /* flex: 1; */
   max-width: 248px;
-  background: rgba(13,22,36,.6);
-  color: rgba(255,255,255,.7);
   transition-duration: .3s;
   border-top-right-radius: 3px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
   border: 2px solid red;
+}
+.room-activity .max-guest-number {
+  z-index: 1;
+}
+.room-activity .max-guest-number p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
 }
 .room-activity.open {
   transform: translateX(-8px);
@@ -277,22 +286,39 @@ body {
   right: 0;
   height: 100%;
   display: flex;
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 2px -2px 4px 0 rgba(87,87,87,0.5);
   flex-direction: column;
   border: 2px solid #00ff7f;
 }
+.room-list-content div h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+}
 .room-list-header {
-  height: 44px;
+  height: 10px;
   padding: 4px 8px;
   flex-shrink: 0;
   margin-bottom: 4px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   border: 2px solid #ccff00;
+}
+.room-list-header button.close-button {
+  width: 17px;
+  height: 17px;
+  background: url("../images/icon/close.png") no-repeat;
+  border: none;
 }
 .room-list-content div ul {
   border: 2px solid #ccff00;
 }
 .room-list-item {
+  list-style: none;
   width: 100%;
   height: 56px;
   transition: background-color .2s ease-out;
@@ -312,4 +338,11 @@ body {
   align-items: center;
   color: #fff;
   cursor: pointer;
+  text-decoration: none;
+}
+.room-list-item-wrapper button.video-sound {
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: url("../images/icon/sound-on.png") no-repeat;
 }
