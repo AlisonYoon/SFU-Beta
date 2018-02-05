@@ -297,6 +297,9 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
+  padding-bottom: 17px;
+  padding-left: 16px;
+  border-bottom: 1px solid rgba(218,218,218,0.23);
 }
 .room-list-header {
   height: 10px;
@@ -306,7 +309,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  border: 2px solid #ccff00;
+  /* border: 2px solid #ccff00; */
 }
 .room-list-header button.close-button {
   width: 17px;
@@ -315,13 +318,14 @@ body {
   border: none;
 }
 .room-list-content div ul {
-  border: 2px solid #ccff00;
+  /* border: 2px solid #ccff00; */
 }
 .room-list-item {
   list-style: none;
   width: 100%;
   height: 56px;
   transition: background-color .2s ease-out;
+  border-bottom: 1px solid rgba(218,218,218,0.23);
 }
 .room-list-item-wrapper {
   height: 100%;
@@ -335,14 +339,17 @@ body {
   flex-direction: row;
   flex-grow: 1;
   min-width: 0;
-  align-items: center;
   color: #fff;
   cursor: pointer;
   text-decoration: none;
+}
+.room-list-item-wrapper a .camera-status-icon {
+  margin-right: 11px;
 }
 .room-list-item-wrapper button.video-sound {
   width: 18px;
   height: 18px;
   border: none;
   background: url("../images/icon/sound-on.png") no-repeat;
+  cursor: pointer;
 }
