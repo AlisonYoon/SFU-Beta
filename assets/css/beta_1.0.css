@@ -270,6 +270,8 @@ body {
 }
 .room-activity .max-guest-number {
   z-index: 1;
+  margin-bottom: 48px;
+  text-align: center;
 }
 .room-activity .max-guest-number p {
   color: #fff;
@@ -278,6 +280,7 @@ body {
 }
 .room-activity.open {
   transform: translateX(-8px);
+  width: 100%;
 }
 .room-list-content {
   width: 248px;
@@ -349,6 +352,9 @@ body {
   width: 35px;
   height: 30px;
   background: url("../images/icon/video-on.png") no-repeat;
+}
+.room-list-item-wrapper a:hover .camera-status-icon {
+  background: url("../images/icon/video-hover.png") no-repeat;
 }
 .room-list-item-wrapper button.video-sound {
   width: 18px;
