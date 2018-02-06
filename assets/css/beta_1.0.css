@@ -31,6 +31,7 @@ body {
   -webkit-flex-flow: column wrap;
   align-items: center;
   justify-content: space-around;
+  flex-direction: row;
   width: 100%;
   z-index: 2;
   /* margin-bottom: 80px; */
@@ -259,7 +260,7 @@ body {
 .room-activity {
   height: 100%;
   z-index: 2;
-  /* flex: 1; */
+  flex: 1;
   max-width: 248px;
   transition-duration: .1s;
   border-top-right-radius: 3px;
