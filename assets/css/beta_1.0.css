@@ -261,7 +261,7 @@ body {
   z-index: 2;
   /* flex: 1; */
   max-width: 248px;
-  transition-duration: .3s;
+  transition-duration: .1s;
   border-top-right-radius: 3px;
   display: flex;
   justify-content: flex-end;
