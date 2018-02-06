@@ -20,6 +20,7 @@ for(var i=0, n=videoDom.length; i<n; i++){
     videoDom[i].style.height = videoHeight + "px";
   }  else if (n === 4) {
   var screenContainer = document.getElementById("screenContainer");
+  screenContainer.style.height = 80 + "%";
   screenContainer.style.width = 65 + "%";
   videoHeight = (1 / 2 * document.getElementById("screenContainer").offsetHeight) - 120;
 
@@ -29,6 +30,7 @@ for(var i=0, n=videoDom.length; i<n; i++){
 } else {
   var screenContainer = document.getElementById("screenContainer");
   screenContainer.style.width = 65 + "%";
+  screenContainer.style.height = 80 + "%";
   videoHeight = (1 / 2 * document.getElementById("screenContainer").offsetHeight) - 120 ;
 
   videoDom[i].style.width = 31 + "%";
@@ -46,4 +48,9 @@ for(var i=0, n=videoDom.length; i<n; i++){
 };
 function openAttendee() {
    $("#roomActivity").toggle('open');
+};
+function videoOnOff() {
+  $("#videoOnOff").click(function() {
+    $(".camera-status-icon").css("background","url('./images/icon/video-off.png')");
+  });
 };
