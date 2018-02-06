@@ -50,7 +50,5 @@ function openAttendee() {
    $("#roomActivity").toggle('open');
 };
 function videoOnOff() {
-  $("#videoOnOff").click(function() {
-    $(".camera-status-icon").css("background","url('./images/icon/video-off.png')");
-  });
+    $("#cameraStatusIcon1").toggleClass('cam-off');
 };

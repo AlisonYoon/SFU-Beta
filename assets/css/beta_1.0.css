@@ -343,7 +343,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-.room-list-item-wrapper a {
+.room-list-item-wrapper div {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -353,13 +353,19 @@ body {
   align-items: center;
   text-decoration: none;
 }
-.room-list-item-wrapper a .camera-status-icon {
+.room-list-item-wrapper div .camera-status-icon {
   margin-right: 11px;
   width: 35px;
   height: 30px;
   background: url("../images/icon/video-on.png") no-repeat;
 }
-.room-list-item-wrapper a:hover .camera-status-icon {
+.room-list-item-wrapper div .cam-off {
+  margin-right: 11px;
+  width: 35px;
+  height: 30px;
+  background: url("../images/icon/video-off.png") no-repeat;
+}
+.room-list-item-wrapper div:hover .camera-status-icon {
   background: url("../images/icon/video-hover.png") no-repeat;
 }
 .room-list-item-wrapper button.video-sound {
