@@ -44,3 +44,6 @@ for(var i=0, n=videoDom.length; i<n; i++){
   console.error('videoWidth = ' + videoWidth + "  Height = " + videoHeight);
 }
 };
+function openChat() {
+  
+};
