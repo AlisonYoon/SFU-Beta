@@ -53,45 +53,7 @@ h1 {
   border: 1px solid #CCFF00;
   position: relative;
 }
-.video-box:hover .videoView-topToolbar {
-  opacity: 1;
-}
-.videoView-topToolbar {
-  display: flex;
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 100%;
-  z-index: 20;
-  justify-content: flex-end;
-  /* border: 2px solid #ff1975; */
-  transition: all .2s linear;
-  opacity: 0;
-}
-.videoView-topToolbar button {
-  background: transparent;
-  cursor: pointer;
-  border: none;
-}
-.videoView-topToolbar button figure {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-.videoView-topToolbar button figure div {
-  background-color: rgba(0,0,0,0.7);
-  height: 38px;
-  width: 169px;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 18px;
-  line-height: 36px;
-  text-align: center;
-  display: none;
-}
+
 .videoView-bottomLeftName {
   --size: 24px;
   --font-size: 15px;
