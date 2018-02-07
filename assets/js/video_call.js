@@ -55,3 +55,12 @@ function videoOnOff() {
 function soundOnOff() {
   $("#soundStatusIcon1").toggleClass('sound-off');
 }
+function recOnOff() {
+  if ($('.rec-btn-on').css('display')=='none') {
+    $('.rec-btn').hide();
+    $('.rec-btn-on').show();
+  } else if ($('.rec-btn-on').css('display')=='block') {
+    $('.rec-btn').show();
+    $('.rec-btn-on').hide();
+  };
+};
