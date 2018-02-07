@@ -52,3 +52,6 @@ function openAttendee() {
 function videoOnOff() {
     $("#cameraStatusIcon1").toggleClass('cam-off');
 };
+function soundOnOff() {
+  $("#soundStatusIcon1").toggleClass('sound-off');
+}

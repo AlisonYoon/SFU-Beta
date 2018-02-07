@@ -368,13 +368,19 @@ body {
   height: 30px;
   background: url("../images/icon/video-off.png") no-repeat;
 }
-.room-list-item-wrapper div:hover .camera-status-icon {
+/* .room-list-item-wrapper div:hover .camera-status-icon {
   background: url("../images/icon/video-hover.png") no-repeat;
-}
+} */
 .room-list-item-wrapper button.video-sound {
   width: 18px;
   height: 18px;
   border: none;
   background: url("../images/icon/sound-on.png") no-repeat;
   cursor: pointer;
+}
+.room-list-item-wrapper button.sound-off {
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: url("../images/icon/sound-off.png") no-repeat;
 }
