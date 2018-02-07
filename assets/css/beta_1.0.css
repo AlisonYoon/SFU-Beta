@@ -318,13 +318,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  position: relative;
+  z-index: 2;
   /* border: 2px solid #ccff00; */
 }
 .room-list-header button.close-button {
-  width: 17px;
-  height: 17px;
-  background: url("../images/icon/close.png") no-repeat;
+  width: 22px;
+  height: 22px;
+  background: url("../images/icon/close.png") no-repeat 50% 50%;
   border: none;
+  cursor: pointer;
 }
 .room-list-content div ul {
   /* border: 2px solid #ccff00; */
