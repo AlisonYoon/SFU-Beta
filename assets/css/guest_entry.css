@@ -47,6 +47,11 @@ h1 {
   justify-content: center;
   border: 2px solid #8b9b5c;
 }
+.settings-box {
+  width: 48%;
+  min-height: 100px;
+  border: 1px solid #ffc057;
+}
 .video-box {
   width: 48%;
   min-height: 100px;
@@ -170,6 +175,7 @@ h1 {
   font-size: 16px;
   line-height: 22px;
 }
+/* Button Hover */
 .join-call a{
   text-decoration: none;
   display: block;
@@ -212,6 +218,7 @@ h1 {
 .button:hover:after{
   height: 100%;
 }
+/* End Button Hover */
 .video-onoff, .mic-onoff, .settings {
   cursor: pointer;
 }

@@ -329,6 +329,9 @@ body {
   border: none;
   cursor: pointer;
 }
+.room-list-header button.close-button:focus, .room-list-item-wrapper button.video-sound:focus,.room-list-item-wrapper button.sound-off:focus {
+  outline: 0;
+}
 .room-list-content div ul {
   /* border: 2px solid #ccff00; */
 }
