@@ -16,9 +16,13 @@ function camOnOff() {
   if ($('.videoOn').css('display')=='none') {
     $('.videoOff').hide();
     $('.videoOn').show();
+    $('#videoFrame').css("background-color","transparent");
+    $('.cam-off-msg').hide();
   } else if ($('.videoOn').css('display')=='block') {
     $('.videoOff').show();
     $('.videoOn').hide();
+    $('.cam-off-msg').fadeTo('fast',1.00);
+    $('#videoFrame').css("background-color","#000");
   };
 };
 function micOnOff() {

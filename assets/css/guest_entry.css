@@ -53,7 +53,21 @@ h1 {
   border: 1px solid #CCFF00;
   position: relative;
 }
-
+.cam-off-msg {
+  opacity: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all .3s ease;
+}
+.cam-off-msg p {
+  color: #fff;
+}
+#videoFrame {
+  transition: all .2s ease;
+}
 .videoView-bottomLeftName {
   --size: 24px;
   --font-size: 15px;
