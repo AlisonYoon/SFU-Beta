@@ -39,6 +39,52 @@
                 <input id="myName" value="Guest (edit name)" placeholder="Guest (edit name)" onclick="nameEdit()">
               </div>
             </div>
+            <div class="setting-box">
+              <div class="settings-header">
+                <h1>Settings</h1>
+                <button>X</button>
+              </div>
+              <div class="settings-dropdown">
+                <form>
+                  <div class="setting-dropdown-row1">
+                    <div>
+                      <h2>Camera</h2>
+                      <select name="camera"> <!--Supplement an id here instead of using 'text'-->
+                        <option value="value1">Value 1</option>
+                        <option value="value2" selected>Value 2</option>
+                      </select>
+                    </div>
+                    <div>
+                      <h2>Microphone</h2>
+                      <select name="Microphone"> <!--Supplement an id here instead of using 'text'-->
+                        <option value="value1">Value 1</option>
+                        <option value="value2" selected>Value 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="setting-dropdown-row2">
+                    <div>
+                      <h2>Video quality</h2>
+                      <select name="camera"> <!--Supplement an id here instead of using 'text'-->
+                        <option value="value1">Value 1</option>
+                        <option value="value2" selected>Value 2</option>
+                      </select>
+                    </div>
+                    <div>
+                      <h2>Sound output</h2>
+                      <select name="camera"> <!--Supplement an id here instead of using 'text'-->
+                        <option value="value1">Value 1</option>
+                        <option value="value2" selected>Value 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <a href="javascript:void(0)" title="Join Call" targe="_blank" class="button">Join call</a>
+                  </div>
+                </form>
+              </div>
+              <div class="settings-msg"></div>
+            </div>
           </div>
           <div class="setting-tool-box">
             <div class="video-onoff" onclick="camOnOff()">

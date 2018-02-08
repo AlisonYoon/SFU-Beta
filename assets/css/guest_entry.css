@@ -212,6 +212,6 @@ h1 {
 .button:hover:after{
   height: 100%;
 }
-.video-onoff, .mic-onoff {
+.video-onoff, .mic-onoff, .settings {
   cursor: pointer;
 }
