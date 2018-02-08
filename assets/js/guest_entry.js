@@ -29,8 +29,10 @@ function micOnOff() {
   if ($('.micOn').css('display')=='none') {
     $('.micOff').hide();
     $('.micOn').show();
+    $('.micOnParent').show();
   } else if ($('.micOn').css('display')=='block') {
     $('.micOff').show();
     $('.micOn').hide();
+    $('.micOnParent').hide();
   };
 };
