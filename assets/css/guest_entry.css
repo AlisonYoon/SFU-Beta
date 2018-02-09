@@ -260,6 +260,16 @@ a.button2:hover::before, .join-call a:hover::before {
   justify-content: space-between;
   border: 1px solid #c72844;
 }
+button.close-button {
+  width: 22px;
+  height: 22px;
+  background: url("../images/icon/close.png") no-repeat 50% 50%;
+  border: none;
+  cursor: pointer;
+}
+button.close-button:focus {
+  outline: 0;
+}
 .settings-dropdown {
   display: flex;
   flex-direction: column;
@@ -278,14 +288,13 @@ a.button2:hover::before, .join-call a:hover::before {
 }
 /*** Select Box ***/
 .styled-select {
-  border: 1px solid #ccc;
+  border: 1px solid #32353B;
   box-sizing: border-box;
   border-radius: 3px;
-
   overflow: hidden;
   position: relative;
 }
-.styled-select, .styled-select select { width: 240px;}
+.styled-select, .styled-select select { width: 240px; font-size: 16px; color: #32353B;}
 select:focus { outline: none; }
 .styled-select select {
   height: 34px;

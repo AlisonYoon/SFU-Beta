@@ -21,6 +21,16 @@
         <!-- Font Awesome for Select Box -->
         <!-- [if IE 9]><html class='ie'> <![endif] -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <!--[if (gte IE 8)&(lte IE 9)]>
+          <style type="text/css">
+          .styled-select select { width: 110%; }
+          </style>
+          <![endif]-->
+          <!--[if lte IE 7]>
+          <style type="text/css">
+          .fa-sort-desc { display: none;}
+          </style>
+          <![endif]-->
 
 
     </head>
@@ -46,7 +56,7 @@
             <div class="settings-box">
               <div class="settings-header">
                 <h1>Settings</h1>
-                <button>X</button>
+                <button class="close-button"></button>
               </div>
               <div class="settings-dropdown">
                 <form>
