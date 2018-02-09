@@ -23,6 +23,7 @@ h2 {
   color: #fff;
   font-size: 18px;
   line-height: 24px;
+  margin-bottom: 8px;
 }
 .wrap {
   bottom: 0;
@@ -248,6 +249,9 @@ a.button2:hover::before, .join-call a:hover::before {
   position: relative;
   border: 2px solid #eeee00;
 }
+.save-btn .button2 {
+  margin: auto 65px;
+}
 .video-onoff, .mic-onoff, .settings {
   cursor: pointer;
 }
@@ -296,6 +300,7 @@ button.close-button:focus {
 }
 .settings-msg {
   color: #fff;
+  margin: 0 35px 18px;
 }
 /*** Select Box ***/
 .styled-select {
