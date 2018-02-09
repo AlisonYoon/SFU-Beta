@@ -53,66 +53,66 @@
                 <input id="myName" value="Guest (edit name)" placeholder="Guest (edit name)" onclick="nameEdit()">
               </div>
             </div>
-            <div class="settings-box">
-              <div class="settings-header">
-                <h1>Settings</h1>
-                <button class="close-button"></button>
+              <div class="settings-box">
+                <div class="settings-header">
+                  <h1>Settings</h1>
+                  <button class="close-button"></button>
+                </div>
+                <div class="settings-dropdown">
+                  <form class="settings-form">
+                    <div class="setting-dropdown-row1">
+                      <div>
+                        <h2>Camera</h2>
+                        <div class="styled-select">
+                           <select name ="camera">
+                             <option>FaceTime HD Camera</option>
+                             <option>The second option</option>
+                           </select>
+                          <span class="fa fa-sort-desc"></span>
+                        </div>
+                      </div>
+                      <div>
+                        <h2>Microphone</h2>
+                        <div class="styled-select">
+                           <select name="microphone">
+                             <option>FaceTime HD Camera</option>
+                             <option>The second option</option>
+                           </select>
+                          <span class="fa fa-sort-desc"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="setting-dropdown-row2">
+                      <div>
+                        <h2>Video quality</h2>
+                        <div class="styled-select">
+                           <select name="video quality">
+                             <option>FaceTime HD Camera</option>
+                             <option>The second option</option>
+                           </select>
+                          <span class="fa fa-sort-desc"></span>
+                        </div>
+                      </div>
+                      <div>
+                        <h2>Sound output</h2>
+                        <div class="styled-select">
+                           <select>
+                             <option>FaceTime HD Camera</option>
+                             <option>The second option</option>
+                           </select>
+                          <span class="fa fa-sort-desc"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="save-btn">
+                      <a href="javascript:void(0)" title="Save settings" targe="_blank" class="button2">Save setting</a>
+                    </div>
+                    <div class="settings-msg">
+                      <p>Updating your settings will refresh your browser.</p>
+                    </div>
+                  </form>
+                </div>
               </div>
-              <div class="settings-dropdown">
-                <form class="settings-form">
-                  <div class="setting-dropdown-row1">
-                    <div>
-                      <h2>Camera</h2>
-                      <div class="styled-select">
-                         <select name ="camera">
-                           <option>FaceTime HD Camera</option>
-                           <option>The second option</option>
-                         </select>
-                        <span class="fa fa-sort-desc"></span>
-                      </div>
-                    </div>
-                    <div>
-                      <h2>Microphone</h2>
-                      <div class="styled-select">
-                         <select name="microphone">
-                           <option>FaceTime HD Camera</option>
-                           <option>The second option</option>
-                         </select>
-                        <span class="fa fa-sort-desc"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="setting-dropdown-row2">
-                    <div>
-                      <h2>Video quality</h2>
-                      <div class="styled-select">
-                         <select name="video quality">
-                           <option>FaceTime HD Camera</option>
-                           <option>The second option</option>
-                         </select>
-                        <span class="fa fa-sort-desc"></span>
-                      </div>
-                    </div>
-                    <div>
-                      <h2>Sound output</h2>
-                      <div class="styled-select">
-                         <select>
-                           <option>FaceTime HD Camera</option>
-                           <option>The second option</option>
-                         </select>
-                        <span class="fa fa-sort-desc"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="save-btn">
-                    <a href="javascript:void(0)" title="Save settings" targe="_blank" class="button2">Save setting</a>
-                  </div>
-                  <div class="settings-msg">
-                    <p>Updating your settings will refresh your browser.</p>
-                  </div>
-                </form>
-              </div>
-            </div>
           </div>
           <div class="setting-tool-box">
             <div class="video-onoff" onclick="camOnOff()">
@@ -137,7 +137,7 @@
               <img src="assets/images/guestentry/mic-off.png" alt="" class="micOff">
               <p>mic on</p>
             </div>
-            <div class="settings">
+            <div class="settings" onclick="settingsBox()">
               <img src="assets/images/guestentry/settings.png" alt="">
               <p>settings</p>
             </div>

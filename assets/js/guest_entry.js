@@ -36,3 +36,23 @@ function micOnOff() {
     $('.micOnParent').hide();
   };
 };
+function settingsBox() {
+  if ($('.settings-box').css('display')== 'flex') {
+    $('.settings-box').css({
+       transform: 'translateX(-600px)',
+       MozTransform: 'translateX(-600px)',
+       WebkitTransform: 'translateX(-600px)',
+       msTransform: 'translateX(-600px)',
+       display: 'none'
+    });
+  } else {
+    // $('.settings-box').show();
+    $('.settings-box').css({
+      transform: 'translateX(0px)',
+      MozTransform: 'translateX(0px)',
+      WebkitTransform: 'translateX(0px)',
+      msTransform: 'translateX(0px)',
+       display: 'flex'
+  });
+};
+};

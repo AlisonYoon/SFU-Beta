@@ -18,6 +18,7 @@ h1 {
   line-height: 30px;
   font-weight: 600;
   align-self: flex-start;
+  margin-left: 65px;
 }
 h2 {
   color: #fff;
@@ -52,11 +53,6 @@ h2 {
   flex-direction: row;
   justify-content: center;
   border: 2px solid #8b9b5c;
-}
-.settings-box {
-  width: 48%;
-  min-height: 100px;
-  border: 1px solid #ffc057;
 }
 .video-box {
   width: 48%;
@@ -110,7 +106,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
   margin: 17px 0 37px 0;
-  border: 2px solid #cd9b9b;
+  /* border: 2px solid #cd9b9b; */
 }
 .setting-tool-box div {
   width: 103px;
@@ -247,7 +243,7 @@ a.button2:hover::before, .join-call a:hover::before {
   width: 100%;
   height: 110px;
   position: relative;
-  border: 2px solid #eeee00;
+  /* border: 2px solid #eeee00; */
 }
 .save-btn .button2 {
   margin: auto 65px;
@@ -263,13 +259,18 @@ a.button2:hover::before, .join-call a:hover::before {
   flex-direction: column;
   justify-content: space-between;
   padding: 14px 35px;
+  width: 48%;
+  min-height: 100px;
+  border: 1px solid #ffc057;
+  transition: all .2s ease;
 }
 .settings-header {
   display: flex;
   z-index: 1;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid #c72844;
+  margin-top: 12px;
+  /* border: 1px solid #c72844; */
 }
 button.close-button {
   width: 22px;
@@ -283,7 +284,7 @@ button.close-button:focus {
 }
 .settings-dropdown {
   height: 80%;
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
 }
 .settings-form {
   height: 100%;
@@ -295,12 +296,12 @@ button.close-button:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 1px solid #33ffcc;
+  /* border: 1px solid #33ffcc; */
   height: 72px;
 }
 .settings-msg {
   color: #fff;
-  margin: 0 35px 18px;
+  margin: 0 35px 18px 65px;
 }
 /*** Select Box ***/
 .styled-select {
