@@ -18,6 +18,10 @@
         <!-- Sign Up page css  -->
         <link rel="stylesheet" href="assets/css/guest_entry.css">
 
+        <!-- Font Awesome for Select Box -->
+        <!-- [if IE 9]><html class='ie'> <![endif] -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 
     </head>
     <body>
@@ -49,33 +53,45 @@
                   <div class="setting-dropdown-row1">
                     <div>
                       <h2>Camera</h2>
-                      <select name="camera"> <!--Supplement an id here instead of using 'text'-->
-                        <option value="value1">Value 1</option>
-                        <option value="value2" selected>Value 2</option>
-                      </select>
+                      <div class="styled-select">
+                         <select name ="camera">
+                           <option>FaceTime HD Camera</option>
+                           <option>The second option</option>
+                         </select>
+                        <span class="fa fa-sort-desc"></span>
+                      </div>
                     </div>
                     <div>
                       <h2>Microphone</h2>
-                      <select name="Microphone"> <!--Supplement an id here instead of using 'text'-->
-                        <option value="value1">Value 1</option>
-                        <option value="value2" selected>Value 2</option>
-                      </select>
+                      <div class="styled-select">
+                         <select name="microphone">
+                           <option>FaceTime HD Camera</option>
+                           <option>The second option</option>
+                         </select>
+                        <span class="fa fa-sort-desc"></span>
+                      </div>
                     </div>
                   </div>
                   <div class="setting-dropdown-row2">
                     <div>
                       <h2>Video quality</h2>
-                      <select name="camera"> <!--Supplement an id here instead of using 'text'-->
-                        <option value="value1">Value 1</option>
-                        <option value="value2" selected>Value 2</option>
-                      </select>
+                      <div class="styled-select">
+                         <select name="video quality">
+                           <option>FaceTime HD Camera</option>
+                           <option>The second option</option>
+                         </select>
+                        <span class="fa fa-sort-desc"></span>
+                      </div>
                     </div>
                     <div>
                       <h2>Sound output</h2>
-                      <select name="camera"> <!--Supplement an id here instead of using 'text'-->
-                        <option value="value1">Value 1</option>
-                        <option value="value2" selected>Value 2</option>
-                      </select>
+                      <div class="styled-select">
+                         <select>
+                           <option>FaceTime HD Camera</option>
+                           <option>The second option</option>
+                         </select>
+                        <span class="fa fa-sort-desc"></span>
+                      </div>
                     </div>
                   </div>
                   <div>
@@ -83,7 +99,9 @@
                   </div>
                 </form>
               </div>
-              <div class="settings-msg"></div>
+              <div class="settings-msg">
+                <p>Updating your settings will refresh your browser.</p>
+              </div>
             </div>
           </div>
           <div class="setting-tool-box">
