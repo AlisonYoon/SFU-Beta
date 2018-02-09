@@ -190,7 +190,7 @@ a.button2, .join-call a {
   margin: auto;
   text-decoration: none;
   cursor: pointer;
-  /* border: 1px solid #C72844; */
+  border: 1px solid #C72844;
   border-radius: 38px;
   height: 2.8em;
   width: 10em;
@@ -242,6 +242,12 @@ a.button2:hover::before, .join-call a:hover::before {
   width: 327px;
   left: 0;
 }
+.save-btn {
+  width: 100%;
+  height: 110px;
+  position: relative;
+  border: 2px solid #eeee00;
+}
 .video-onoff, .mic-onoff, .settings {
   cursor: pointer;
 }
@@ -252,6 +258,7 @@ a.button2:hover::before, .join-call a:hover::before {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 14px 35px;
 }
 .settings-header {
   display: flex;
@@ -271,17 +278,21 @@ button.close-button:focus {
   outline: 0;
 }
 .settings-dropdown {
+  height: 80%;
+  border: 2px solid pink;
+}
+.settings-form {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 40%;
   justify-content: space-between;
-  border: 2px solid pink;
 }
 .setting-dropdown-row1, .setting-dropdown-row2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   border: 1px solid #33ffcc;
+  height: 72px;
 }
 .settings-msg {
   color: #fff;
