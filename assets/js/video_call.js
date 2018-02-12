@@ -64,3 +64,62 @@ function recOnOff() {
     $('.rec-btn-on').hide();
   };
 };
+// Video, Mic on off
+function toolVideoOnOff() {
+  if ($('.video-btn').css('display')=='none') {
+    $('.video-btn-off').hide();
+    $('.video-btn').show();
+  } else if ($('.video-btn').css('display')=='block') {
+    $('.video-btn-off').show();
+    $('.video-btn').hide();
+  };
+};
+function toolMicOnOff() {
+  if ($('.mic-btn').css('display')=='none') {
+    $('.mic-btn-off').hide();
+    $('.mic-btn').show();
+  } else if ($('.mic-btn').css('display')=='block') {
+    $('.mic-btn-off').show();
+    $('.mic-btn').hide();
+  };
+};
+// End Video, Mic on off
+function fullscreen(type){
+let element = document.getElementById("screenContainer");
+if(type===0){
+if (element.requestFullScreen) {
+element.requestFullScreen();
+}
+else if(element.webkitRequestFullScreen){
+element.webkitRequestFullScreen();
+}
+else if(element.mozRequestFullScreen){
+element.mozRequestFullScreen();
+}
+$("#screenContainer").addClass('fullscreen');
+$(".video-box").addClass('fullscreen');
+$(".screenShareOwner ").addClass('fullscreen');
+$(".videoView-topToolbar button figure div").css('display','block');
+$(".videoView-topToolbar button figure img").css('display','none');
+}
+else{
+if (document.exitFullscreen){
+document.exitFullscreen();
+}
+else if (document.msExitFullscreen){
+document.msExitFullscreen();
+}
+else if (document.mozCancelFullScreen){
+document.mozCancelFullScreen();
+}
+else if (document.webkitExitFullscreen){
+document.webkitExitFullscreen();
+}
+$("#screenContainer").removeClass('fullscreen');
+$(".video-box").removeClass('fullscreen');
+$(".screenShareOwner ").removeClass('fullscreen');
+$(".videoView-topToolbar button figure div").css('display','none');
+$(".videoView-topToolbar button figure img").css('display','block');
+}
+
+};

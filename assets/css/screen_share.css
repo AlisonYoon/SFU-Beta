@@ -200,6 +200,12 @@ bottom: 119px;
   top: -26px;
   display: none;
 }
+.video-toolbar-item img.video-btn, .video-toolbar-item img.mic-btn {
+  display: block;
+}
+.video-toolbar-item img.video-btn-off, .video-toolbar-item img.mic-btn-off {
+  display: none;
+}
 .video-toolbar-item div {
   text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
   font-size: 14px;
