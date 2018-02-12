@@ -1,0 +1,130 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Screen Share</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!--Google fonts links-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+
+        <!-- Screen SHare page css  -->
+        <link rel="stylesheet" href="assets/css/screen_share.css">
+
+
+    </head>
+    <body>
+      <section class="wrap">
+        <div class="room-wrap">
+          <div class="video-view">
+            <div class="video-space-header">
+              <div class="room-url-wrapper">
+                <div class="copy-button-wrapper">
+                  <img src="assets/images/icon/link.png" alt="">
+                  Copy link
+                </div>
+              </div>
+            </div>
+            <!-- Video Room Header End -->
+            <div class="room-activity open" id="roomActivity">
+              <aside class="room-list-content">
+                <header class="room-list-header">
+                  <button class="close-button" onclick="openAttendee()"></button>
+                </header>
+                <div>
+                  <h1>guest list</h1>
+                  <ul>
+                    <li class="room-list-item">
+                      <article class="room-list-item-wrapper">
+                        <div id="videoOnOff" onclick="videoOnOff()">
+                          <div class="camera-status-icon" id="cameraStatusIcon1"></div>
+                          <div class="text-container"><p class="attendee-name">Kylo Ren</p></div>
+                        </div>
+                        <button class="video-sound" id="soundStatusIcon1" onclick="soundOnOff()"></button>
+                      </article>
+                    </li>
+                    <li class="room-list-item">
+                      <article class="room-list-item-wrapper">
+                        <div>
+                          <div class="camera-status-icon"></div>
+                          <div class="text-container"><p class="attendee-name">Ray</p></div>
+                        </div>
+                        <button class="video-sound"></button>
+                      </article>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+              <div class="max-guest-number">
+                <p>Maximum 6 guests.</p>
+              </div>
+            </div>
+            <!-- Attendee List End  -->
+            <div id ="screenContainer" class="screen-container">
+              <div class="video-box"  onclick="videoHeight()">
+                <div style="height: 100%;">
+                  <div class="video-frame" style="height: 100%;">
+                    Screen Share
+                  </div>
+                  <!-- This is where Video goes -->
+                </div>
+                <div class="videoView-topToolbar">
+                  <button>
+                    <figure>
+                      <img src="assets/images/icon/maximize.png" alt="">
+                      <!-- Full Screen icon  -->
+                      <div>Exit fullscreen</div>
+                      <!-- Full Screen icon changes to Exit Fullscreen div button  -->
+                    </figure>
+                  </button>
+                </div>
+              </div>
+              <!-- Screen Share Box -->
+              <div class="screenShareOwner">
+                Screen share owner's video
+                <div class="videoView-bottomLeftName">
+                  <p>Share Owner Name</p>
+                </div>
+              </div>
+            </div>
+            <!-- Video Screen Area End -->
+            <div id="videoToolbarFixed" class="video-toolbar-fixed">
+              <div class="video-toolbar">
+                <div class="meeting-ctrl">
+                  <button class="video-toolbar-item" id="roomActivity" onclick="openAttendee()"><img src="assets/images/icon/guest.png" alt=""><div>guest</div></button>
+                  <button class="video-toolbar-item"><img src="assets/images/icon/video-on.png" alt=""><div>video on</div></button>
+                  <button class="video-toolbar-item"><img src="assets/images/icon/mic-on.png" alt=""><div>mic on</div></button>
+                  <button class="video-toolbar-item" id="recBtn" onclick="recOnOff()"><img src="assets/images/icon/recording-off.png" alt="" class="rec-btn"><img src="assets/images/icon/recording-on.png" alt="" class="rec-btn-on"><div>rec</div></button>
+                  <button class="video-toolbar-item"><img src="assets/images/icon/present.png" alt=""><div>present</div></button>
+                  <button class="video-toolbar-item"><img src="assets/images/icon/settings.png" alt=""><div>settings</div></button>
+                  <button class="video-toolbar-item leave-button"><img src="assets/images/icon/leave.png" alt=""><div>leave</div></button>
+                </div>
+              </div>
+            </div>
+            <!-- Video Call Control Box End -->
+          </div>
+          <!-- Video View End -->
+          <div class="chat-open-button visible">
+            <img src="assets/images/icon/chat.png" alt="">
+            Chat
+          </div>
+          <!-- Chat Button End -->
+          <div></div>
+          <div></div>
+
+        </div>
+      </section>
+
+
+        <script src="assets/js/screen_share.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </body>
+</html>
