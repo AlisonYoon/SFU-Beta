@@ -116,12 +116,16 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  transition: bottom .2s ease;
+  transition: all .2s ease;
   width: 100%;
   z-index: 10;
   display: flex;
   border: 2px solid #ffff66;
 }
+.toolbarHide {
+  transform: translateY(150%);
+}
+/* Toobar hide class */
 .video-toolbar {
   display: flex;
   justify-content: space-between;

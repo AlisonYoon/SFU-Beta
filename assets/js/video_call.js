@@ -121,5 +121,8 @@ $(".screenShareOwner ").removeClass('fullscreen');
 $(".videoView-topToolbar button figure div").css('display','none');
 $(".videoView-topToolbar button figure img").css('display','block');
 }
-
 };
+function fullScreenToolBox() {
+$("#videoToolbarFixed").toggleClass('toolbarHide');
+};
+// Tool bar hide function
