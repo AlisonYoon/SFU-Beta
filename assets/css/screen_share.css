@@ -106,22 +106,31 @@ body {
   position: relative;
   border:2px solid pink;
 }
+.screen-container.fullscreen{
+width: 100%;
+flex: 1;
+}
 .video-box {
-  width: 48%;
-  min-height: 100px;
-  border: 1px solid #CCFF00;
-  position: relative;
+width: 48%;
+min-height: 100px;
+border: 1px solid #CCFF00;
+position: relative;
+}
+.video-box.fullscreen {
+width: 100%;
 }
 .screenShareOwner {
-  width: 173.3px;
-  height: 130px;
-  align-self: flex-end;
-  margin-left: 19px;
-  position: relative;
-  border: 2px solid #000;
+width: 173.3px;
+height: 130px;
+align-self: flex-end;
+margin-left: 19px;
+position: relative;
+border: 2px solid #000;
 }
-.fullscreen {
-  width: 100%;
+.screenShareOwner.fullscreen{
+position: absolute;
+right: 37px;
+bottom: 119px;
 }
 .video-toolbar-fixed {
   position: absolute;

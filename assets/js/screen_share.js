@@ -64,8 +64,10 @@ function recOnOff() {
     $('.rec-btn-on').hide();
   };
 };
-function fullscreen(){
+function fullscreen(type){
+
 let element = document.getElementById("screenContainer");
+if(type===0){
 if (element.requestFullScreen) {
 element.requestFullScreen();
 }
@@ -75,11 +77,30 @@ element.webkitRequestFullScreen();
 else if(element.mozRequestFullScreen){
 element.mozRequestFullScreen();
 }
-
 $("#screenContainer").addClass('fullscreen');
-$("#screenContainer").css('flex',1);
 $(".video-box").addClass('fullscreen');
-$(".screenShareOwner ").css({'position': 'absolute', 'right': '37px', 'bottom': '119px'});
+$(".screenShareOwner ").addClass('fullscreen');
 $(".videoView-topToolbar button figure div").css('display','block');
 $(".videoView-topToolbar button figure img").css('display','none');
+}
+else{
+if (document.exitFullscreen){
+document.exitFullscreen();
+}
+else if (document.msExitFullscreen){
+document.msExitFullscreen();
+}
+else if (document.mozCancelFullScreen){
+document.mozCancelFullScreen();
+}
+else if (document.webkitExitFullscreen){
+document.webkitExitFullscreen();
+}
+$("#screenContainer").removeClass('fullscreen');
+$(".video-box").removeClass('fullscreen');
+$(".screenShareOwner ").removeClass('fullscreen');
+$(".videoView-topToolbar button figure div").css('display','none');
+$(".videoView-topToolbar button figure img").css('display','block');
+}
+
 };
