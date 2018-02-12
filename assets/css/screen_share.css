@@ -118,7 +118,10 @@ body {
   align-self: flex-end;
   margin-left: 19px;
   position: relative;
-  border: 2px solid #fff;
+  border: 2px solid #000;
+}
+.fullscreen {
+  width: 100%;
 }
 .video-toolbar-fixed {
   position: absolute;

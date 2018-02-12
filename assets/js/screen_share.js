@@ -64,3 +64,22 @@ function recOnOff() {
     $('.rec-btn-on').hide();
   };
 };
+function fullscreen(){
+let element = document.getElementById("screenContainer");
+if (element.requestFullScreen) {
+element.requestFullScreen();
+}
+else if(element.webkitRequestFullScreen){
+element.webkitRequestFullScreen();
+}
+else if(element.mozRequestFullScreen){
+element.mozRequestFullScreen();
+}
+
+$("#screenContainer").addClass('fullscreen');
+$("#screenContainer").css('flex',1);
+$(".video-box").addClass('fullscreen');
+$(".screenShareOwner ").css({'position': 'absolute', 'right': '37px', 'bottom': '119px'});
+$(".videoView-topToolbar button figure div").css('display','block');
+$(".videoView-topToolbar button figure img").css('display','none');
+};
