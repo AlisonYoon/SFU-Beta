@@ -14,6 +14,13 @@ function videoHeight() {
       videoDom[i].style.height = "";
       videoDom[i].style.width = "";
     }
+    $(".screen-container .video-box:nth-child(2), .screen-container .video-box:nth-child(3), .screen-container .video-box:nth-child(4) ").css({
+      'position':'relative',
+      'width': '128px',
+      'height': '96px',
+      'bottom': '116px',
+      'margin': '0 5px',
+    });
     return;
   }
   else{
@@ -119,6 +126,7 @@ $(".videoView-topToolbar button figure div").css('display','block');
 $(".videoView-topToolbar button figure img").css('display','none');
 $(".video-toolbar-fixed").css('z-index', 10000000000);
 $(".video-space-header").css('z-index', 10000000000);
+$(".screen-container").css('justify-content',"center");
 }
 else{
   isfullscreen = false;
