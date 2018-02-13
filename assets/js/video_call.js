@@ -20,6 +20,7 @@ function videoHeight() {
       'height': '96px',
       'bottom': '116px',
       'margin': '0 5px',
+      'transition': 'all .2s ease'
     });
     return;
   }
@@ -150,13 +151,15 @@ $(".videoView-topToolbar button figure img").css('display','block');
 }
 };
 function fullScreenToolBox() {
-$("#videoToolbarFixed").toggleClass('toolbarHide');
-$('.screenShareOwner.fullscreen').toggleClass('ownervideoDown');
-$('.video-space-header').toggleClass('copylinkHide');
-if($("#videoToolbarFixed").css('transform') == 'translateY(150%)') {
-  $(".screen-container .video-box:nth-child(2), .screen-container .video-box:nth-child(3), .screen-container .video-box:nth-child(4) ").css('bottom','116px');
-} else {
-  $(".screen-container .video-box:nth-child(2), .screen-container .video-box:nth-child(3), .screen-container .video-box:nth-child(4) ").css('bottom','206px');
-};
+  if(isfullscreen){
+    $("#videoToolbarFixed").toggleClass('toolbarHide');
+    $('.screenShareOwner.fullscreen').toggleClass('ownervideoDown');
+    $('.video-space-header').toggleClass('copylinkHide');
+      if($("#videoToolbarFixed").hasClass('toolbarHide')) {
+      $(".screen-container .video-box:nth-child(2), .screen-container .video-box:nth-child(3), .screen-container .video-box:nth-child(4) ").css('bottom','116px');
+      } else {
+      $(".screen-container .video-box:nth-child(2), .screen-container .video-box:nth-child(3), .screen-container .video-box:nth-child(4) ").css('bottom','206px');
+      };
+  }
 };
 // Tool bar hide function
