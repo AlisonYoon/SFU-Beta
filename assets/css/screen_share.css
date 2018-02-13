@@ -15,6 +15,7 @@ body {
   right: 0;
   top: 0;
   z-index: 1;
+  overflow: hidden;
   border:1px solid red;
 }
 .room-wrap {
@@ -50,6 +51,7 @@ body {
   pointer-events: none;
   display: flex;
   justify-content: center;
+  transition: all .2s ease;
 }
 .room-url-wrapper {
   pointer-events: all;
@@ -125,6 +127,7 @@ height: 130px;
 align-self: flex-end;
 margin-left: 19px;
 position: relative;
+transition: all .2s ease;
 border: 2px solid #000;
 }
 .screenShareOwner.fullscreen{
@@ -145,6 +148,12 @@ bottom: 119px;
 }
 .toolbarHide {
   transform: translateY(150%);
+}
+.ownervideoDown {
+  transform: translateY(80%);
+}
+.copylinkHide {
+  transform: translateY(-80%);
 }
 /* Toobar hide class */
 .video-toolbar {
