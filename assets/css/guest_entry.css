@@ -26,6 +26,12 @@ h2 {
   line-height: 24px;
   margin-bottom: 8px;
 }
+.none {
+  display: none !important;
+}
+.block {
+  display: block;
+}
 .wrap {
   bottom: 0;
   left: 0;
@@ -45,6 +51,14 @@ h2 {
   width: 100%;
   height: 80%;
   border: 5px solid #9ecfd6;
+}
+.before-settings {
+  justify-content: center;
+  align-items: center;
+}
+.logo_wrap {
+  width: 187px;
+  height: 38px;
 }
 .test-video-container {
   width: 100%;
