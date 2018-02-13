@@ -67,7 +67,7 @@
               </div>
             </div>
             <!-- Attendee List End  -->
-            <div id ="screenContainer" class="screen-container" onclick="fullScreenToolBox()"><!-- Tool Bar hide -->>
+            <div id ="screenContainer" class="screen-container" onclick="fullScreenToolBox()"><!-- Tool Bar hide -->
               <div class="video-box"  onclick="videoHeight()">
                 <div style="height: 100%;">
                   <div class="video-frame" style="height: 100%;">
@@ -82,9 +82,9 @@
                 <div class="videoView-topToolbar">
                   <button>
                     <figure>
-                      <img src="assets/images/icon/maximize.png" alt="">
+                      <img src="assets/images/icon/maximize.png" alt="" onclick="fullscreen(0)">
                       <!-- Full Screen icon  -->
-                      <div>Exit fullscreen</div>
+                      <div onclick="fullscreen(1)">Exit fullscreen</div>
                       <!-- Full Screen icon changes to Exit Fullscreen div button  -->
                     </figure>
                   </button>

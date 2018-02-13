@@ -101,6 +101,8 @@ $(".video-box").addClass('fullscreen');
 $(".screenShareOwner ").addClass('fullscreen');
 $(".videoView-topToolbar button figure div").css('display','block');
 $(".videoView-topToolbar button figure img").css('display','none');
+$(".video-toolbar-fixed").css('z-index', 10000000000);
+$(".video-space-header").css('z-index', 10000000000);
 }
 else{
 if (document.exitFullscreen){
@@ -124,5 +126,7 @@ $(".videoView-topToolbar button figure img").css('display','block');
 };
 function fullScreenToolBox() {
 $("#videoToolbarFixed").toggleClass('toolbarHide');
+$('.screenShareOwner.fullscreen').toggleClass('ownervideoDown');
+$('.video-space-header').toggleClass('copylinkHide');
 };
 // Tool bar hide function
