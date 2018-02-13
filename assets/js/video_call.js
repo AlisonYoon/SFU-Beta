@@ -92,11 +92,23 @@ function toolVideoOnOff() {
   if ($('.video-btn').css('display')=='none') {
     $('.video-btn-off').hide();
     $('.video-btn').show();
+    $('#videoFrame').css({"background-color":"transparent",
+    '-webkit-box-shadow': 'none',
+  '-moz-box-shadow': 'none',
+  'box-shadow': 'none'
+  });
+    $('.cam-off-msg').hide();
   } else if ($('.video-btn').css('display')=='block') {
     $('.video-btn-off').show();
     $('.video-btn').hide();
+    $('.cam-off-msg').fadeTo('fast',1.00);
+    $('#videoFrame').css({"background-color":"rgba(0,0,0,.5)",
+    '-webkit-box-shadow': 'inset 0px 0px 153px 34px rgba(0,0,0,0.8)',
+  '-moz-box-shadow': 'inset 0px 0px 153px 34px rgba(0,0,0,0.8)',
+  'box-shadow': 'inset 0px 0px 153px 34px rgba(0,0,0,0.8)'});
   };
 };
+// toolVideoOnOff() changed for my video off screen 
 function toolMicOnOff() {
   if ($('.mic-btn').css('display')=='none') {
     $('.mic-btn-off').hide();
