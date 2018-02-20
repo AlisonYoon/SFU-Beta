@@ -55,7 +55,9 @@ body {
 .room-url-wrapper {
   pointer-events: all;
   display: flex;
-  height: 3.3em;
+  height: 5.2em;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .copy-button-wrapper {
   display: flex;
@@ -65,10 +67,14 @@ body {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 1px;
+  padding-top: 22px;
   cursor: pointer;
 }
 .copy-button-wrapper img {
   margin-right: 4px;
+}
+.rec-start, .rec-end, .first-guest {
+  line-height: 24px;
 }
 .chat-open-button {
   position: absolute;
@@ -455,3 +461,11 @@ bottom: 119px;
   border: none;
   background: url("../images/icon/sound-off.png") no-repeat;
 }
+/* Common Classes */
+.block {
+  display: block;
+}
+.none {
+  display: none;
+}
+/* End Common Classes */
