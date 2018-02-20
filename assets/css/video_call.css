@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,12 @@
 }
 body {
   font-family: 'Open Sans', sans-serif;
+}
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 400;
 }
 .wrap {
   bottom: 0;
