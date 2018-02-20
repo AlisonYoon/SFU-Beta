@@ -613,6 +613,9 @@ bottom: 119px;
   left: 0;
   background-color: #fff;
 }
+.leave-modal-content .join-call {
+  top: 0;
+}
 /* End Leave Modal */
 /* Common Classes */
 .block {
