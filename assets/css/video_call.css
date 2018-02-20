@@ -300,6 +300,7 @@ bottom: 119px;
   border-radius: 0;
   border:2px solid green;
   background: transparent;
+  text-decoration: none;
   cursor: pointer;
 }
 .video-toolbar-item:hover {
@@ -413,7 +414,7 @@ bottom: 119px;
 /* Attendee list */
 .room-activity {
   height: 100%;
-  z-index: 2;
+  z-index: 21;
   flex: 1;
   max-width: 248px;
   transition-duration: .1s;
@@ -541,6 +542,78 @@ bottom: 119px;
   border: none;
   background: url("../images/icon/sound-off.png") no-repeat;
 }
+/* Leave Modal */
+.leave-modal-wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.leave-modal-wrap:target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.leave-modal {
+  width: 400px;
+  position: relative;
+}
+
+.leave-modal-content {
+  background: #fff;
+  padding: 40px;
+  border-radius: 2px;
+  position: relative;
+}
+.leave-modal-content p {
+  margin: 0;
+  line-height: 1.6em;
+  color: #444;
+}
+
+.leave-modal-close::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  z-index: 3;
+  width: auto;
+  height: 30px;
+  cursor: pointer;
+  background: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 0 15px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.leave-modal-close::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background: url('../images/icon/close-dark.png') no-repeat;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+/* End Leave Modal */
 /* Common Classes */
 .block {
   display: block;

@@ -68,6 +68,17 @@
             </div>
             <!-- Attendee List End  -->
             <div id ="screenContainer" class="screen-container" onclick="fullScreenToolBox()"><!-- Tool Bar hide -->
+              <!-- Leave Message Modal -->
+              <div class="leave-modal-wrap" id="leave-msg">
+               <figure class="leave-modal">
+                  <a href="#" class="leave-modal-close"></a>
+                  <figcaption class="leave-modal-content">
+                    <h2>Are you sure you want to leave the meeting?</h2>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis enim, placerat id eleifend eu, semper vel sem. Sed interdum commodo enim venenatis pulvinar.</p>
+                  </figcaption>
+               </figure>
+              </div>
+              <!-- End Leave Message Modal  -->
               <div class="video-box" id="videoBox"  onclick="videoHeight()">
                 <div style="height: 100%;">
                   <div class="video-frame" id="videoFrame" style="height: 100%;">
@@ -84,7 +95,7 @@
                   <!-- This is "my" name. One can change only self's name -->
                 </div>
                 <!-- Copy link buton area -->
-                <div class="join-call">
+                <div class="join-call none">
                   <a href="javascript:void(0)" title="Copy link" targe="_blank" class="button">Copy link</a>
                 </div>
                 <!-- End Copy link button area -->
@@ -105,7 +116,6 @@
                   <div class="video-frame" style="height: 100%;">
                     video
                   </div>
-                  <!-- This is where Video goes -->
                 </div>
                 <div class="videoView-bottomLeftName">
                   <p>Guest Name2</p>
@@ -226,7 +236,7 @@
                   <button class="video-toolbar-item" id="recBtn" onclick="recOnOff()"><img src="assets/images/icon/recording-off.png" alt="" class="rec-btn"><img src="assets/images/icon/recording-on.png" alt="" class="rec-btn-on"><div>rec</div></button>
                   <button class="video-toolbar-item"><img src="assets/images/icon/present.png" alt=""><div>present</div></button>
                   <button class="video-toolbar-item"><img src="assets/images/icon/settings.png" alt=""><div>settings</div></button>
-                  <button class="video-toolbar-item leave-button"><img src="assets/images/icon/leave.png" alt=""><div>leave</div></button>
+                  <a class="video-toolbar-item leave-button" href="#leave-msg"><img src="assets/images/icon/leave.png" alt=""><div>leave</div></a>
                 </div>
               </div>
             </div>
