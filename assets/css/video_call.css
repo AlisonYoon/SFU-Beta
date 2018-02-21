@@ -594,8 +594,9 @@ bottom: 119px;
   content: "";
   display: inline-block;
   position: absolute;
-  right: -15px;
-  top: -15px;
+  width: 17px;
+  right: 0px;
+  top: 15px;
   z-index: 3;
   width: auto;
   height: 30px;
@@ -606,15 +607,13 @@ bottom: 119px;
   padding: 0 15px;
   line-height: 30px;
   color: #fff;
+  background: url('../images/icon/close-dark.png') no-repeat;
 }
 
 .leave-modal-close::before {
   content: "";
   display: block;
   position: absolute;
-  width: 17px;
-  height: 17px;
-  background: url('../images/icon/close-dark.png') no-repeat;
   top: 0;
   right: 0;
   bottom: 0;
