@@ -56,9 +56,12 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-.logo_wrap {
+.logo-wrap {
   width: 187px;
   height: 38px;
+}
+.logo-wrap img {
+  width: 100%;
 }
 .test-video-container {
   width: 100%;
@@ -355,3 +358,11 @@ _:-o-prefocus, .selector {
   }
 /*** End Select Box ***/
 /* End Setting  */
+/* Access Denied CSS */
+.access-denied-msg {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 66px;
+}
+/* End Access Denied CSS */
