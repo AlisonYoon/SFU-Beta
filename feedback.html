@@ -24,9 +24,38 @@
       <section class="wrap">
         <div class="room-wrap">
           <div class="video-view">
-            <form action="">
-              <h1>How was your experience?</h1>
-            </form>
+            <div class="feedback-view">
+            <h1 style="margin-top: 40px;">How was your experience?</h1>
+              <form action="" class="select-options join-call">
+                <div>
+                <input type="radio" name="radio" id="radio1" class="radio" checked/>
+                <label for="radio1"><img src="assets/images/icon/signal-4.png" alt="">Great - I loved it</label>
+                </div>
+
+                <div>
+                <input type="radio" name="radio" id="radio2" class="radio"/>
+                <label for="radio2"><img src="assets/images/icon/signal-3.png" alt="">Good - It worked well</label>
+                </div>
+
+                <div>
+                <input type="radio" name="radio" id="radio3" class="radio"/>
+                <label for="radio3"><img src="assets/images/icon/signal-2.png" alt="">Okay - It was adequate</label>
+                </div>
+
+                <div>
+                <input type="radio" name="radio" id="radio4" class="radio"/>
+                <label for="radio4"><img src="assets/images/icon/signal-1.png" alt="">Poor - Meeting was interrupted</label>
+                </div>
+
+                <div>
+                <input type="radio" name="radio" id="radio5" class="radio" checked/>
+                <label for="radio5"><img src="assets/images/icon/signal-0.png" alt="">Bad - Impossible to have a meeting</label>
+                </div>
+                <a href="javascript:void(0)" title="Submit" targe="_blank" class="button">Submit</a>
+              </form>
+              <a href="" class="skip-survey">Skip</a>
+            </div>
+              <!-- Feedback View End  -->
           </div>
           <!-- Video View End -->
 

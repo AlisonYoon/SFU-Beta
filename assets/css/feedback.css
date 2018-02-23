@@ -47,3 +47,160 @@ h1 {
   background: url(../images/bg.jpg) no-repeat;
   background-size: cover;
 }
+.feedback-view {
+  width: 817px;
+  height: 546px;
+  flex-direction: column;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.select-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.select-options div {
+  width: 100%;
+}
+/* Button Hover 2 */
+a.button2, .join-call a {
+  position: absolute;
+  /* top: 0;
+  left: 0;
+  right: 0; */
+  bottom: 63px;
+  margin: auto;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #C72844;
+  border-radius: 38px;
+  height: 2.8em;
+  width: 327px;
+  padding: 0;
+  outline: none;
+  overflow: hidden;
+  color: #fff;
+  -webkit-transition: color 0.3s 0.1s ease-out;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  line-height: 250%;
+  z-index: 1;
+}
+a.button2::before, .join-call a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 327px;
+  height: 20em;
+  line-height: 20em;
+  /* left: -5em; */
+  text-align: center;
+  -webkit-transition: -webkit-box-shadow 0.5s ease-out;
+  transition: -webkit-box-shadow 0.5s ease-out;
+  transition: box-shadow 0.5s ease-out;
+  transition: box-shadow 0.5s ease-out, -webkit-box-shadow 0.5s ease-out;
+  z-index: -1;
+  background: #C72844;
+}
+a.button2:hover, .join-call a:hover {
+  color: #fff;
+}
+a.button2:hover::before, .join-call a:hover::before {
+  -webkit-box-shadow: inset 0 0 0 10em #E8657C;
+          box-shadow: inset 0 0 0 10em #E8657C;
+}
+/* End Button Hover 2 */
+
+/* Select Options */
+label {
+  width: 200px;
+  border-radius: 3px;
+  border-bottom: 1px solid #e4e4e4
+}
+
+/* hide input */
+input.radio:empty {
+	margin-left: -99999px;
+}
+
+/* style label */
+input.radio:empty ~ label {
+  width: 500px;
+	position: relative;
+	float: left;
+	line-height: 38px;
+	text-indent: 3.25em;
+  padding: 5px 0;
+  cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+/* input.radio:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+} */
+
+/* toggle hover */
+/* input.radio:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #C2C2C2;
+} */
+
+input.radio:hover:not(:checked) ~ label {
+	color: #32353B;
+  background: #E2F1F7;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+	/* content:'\2714'; */
+	/* text-indent: .9em; */
+	color: #9CE2AE;
+	background-color: #E2F1F7;
+}
+
+input.radio:checked ~ label {
+	color: #32353B;
+    background: #E2F1F7;
+}
+
+/* radio focus */
+input.radio:focus ~ label:before {
+	box-shadow: 0 0 0 3px #999;
+}
+.select-options div label img {
+  margin-right: 28px;
+}
+/* End Select Options */
+.skip-survey {
+  position: absolute;
+  bottom: 20px;
+  text-decoration: none;
+  color: #57595C;
+}
+a.skip-survey:visited {
+  color: #57595C;
+}
