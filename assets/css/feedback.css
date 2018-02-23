@@ -15,6 +15,12 @@ h1 {
   line-height: 32px;
   font-weight: 400;
 }
+.none {
+  display: none !important;
+}
+.block {
+  display: block;
+}
 .wrap {
   bottom: 0;
   left: 0;
@@ -63,7 +69,7 @@ h1 {
   align-items: center;
   margin-top: 60px;
 }
-.select-options div {
+.select-options div, .select-options table {
   width: 100%;
 }
 /* Button Hover 2 */
@@ -125,7 +131,7 @@ a.button2:hover::before, .join-call a:hover::before {
 label {
   width: 200px;
   border-radius: 3px;
-  border-bottom: 1px solid #e4e4e4
+  border-bottom: 1px solid #e4e4e4;
 }
 
 /* hide input */
@@ -211,4 +217,18 @@ a.skip-survey:visited {
 }
 .record-send-view p.send-note {
   font-size: 16px;
+}
+table {
+  border-collapse: collapse;
+  cellpadding: 5;
+}
+table, tr {
+  border-bottom: 1px solid #e4e4e4;
+}
+table td {
+  padding: 5px 0;
+  line-height: 38px;
+}
+.check-emails {
+  width: 500px;
 }
