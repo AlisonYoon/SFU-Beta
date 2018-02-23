@@ -47,7 +47,7 @@ h1 {
   background: url(../images/bg.jpg) no-repeat;
   background-size: cover;
 }
-.feedback-view {
+.feedback-view, .record-send-view {
   width: 817px;
   height: 546px;
   flex-direction: column;
@@ -195,7 +195,7 @@ input.radio:focus ~ label:before {
   margin-right: 28px;
 }
 /* End Select Options */
-.skip-survey {
+.skip-survey, .send-note{
   position: absolute;
   bottom: 20px;
   text-decoration: none;
@@ -203,4 +203,12 @@ input.radio:focus ~ label:before {
 }
 a.skip-survey:visited {
   color: #57595C;
+}
+/* Record Send View */
+.record-send-view p {
+  color: #57595C;
+  font-size: 18px;
+}
+.record-send-view p.send-note {
+  font-size: 16px;
 }
