@@ -265,3 +265,41 @@ table td {
     font-size: 16px;
     cursor: pointer;
 }
+/* hide checkbox input */
+input.guest-email:empty {
+	margin-left: -99999px;
+}
+/* style checkbox label */
+input.guest-email:empty {
+    width: 80px;
+    height: 18px;
+	position: relative;
+	float: right;
+	line-height: 38px;
+	text-indent: 3.25em;
+  padding: 5px 0;
+  cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+input.guest-email:empty:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+    background: url('../images/icon/check.png') no-repeat;
+}

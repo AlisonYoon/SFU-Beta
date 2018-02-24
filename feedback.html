@@ -64,27 +64,27 @@
                     <tr>
                       <td></td>
                       <td></td>
-                      <td><input type="checkbox" id="selectallguests"/><label for="check1">Select all</label></td>
+                      <td><input type="checkbox" id="selectallguests"/><label for="check1"  style="border-bottom:none;">Select all</label></td>
                     </tr>
                     <tr>
                       <td class="guest-name">Guest 1</td>
                       <td>francois@linearhub.com</td>
-                      <td><input type="checkbox" name="check[]" id="check1" class="guest-email" checked/></td>
+                      <td><input type="checkbox" name="check[]" id="check1" class="guest-email" checked/ onchange="emailSelect()"></td>
                     </tr>
                     <tr>
                       <td class="guest-name">Guest 2</td>
                       <td>jiwook@linearhub.com</td>
-                      <td><input type="checkbox" name="check[]" id="check2" class="guest-email" checked/></td>
+                      <td><input type="checkbox" name="check[]" id="check2" class="guest-email" checked/ onchange="emailSelect()"></td>
                     </tr>
                     <tr>
                       <td class="guest-name">Alison Yoon</td>
                       <td>alison@linearhub.com</td>
-                      <td><input type="checkbox" name="check[]" id="check3" class="guest-email" checked/></td>
+                      <td><input type="checkbox" name="check[]" id="check3" class="guest-email" onchange="emailSelect()"></td>
                     </tr>
                     <tr>
                       <td class="guest-name">Guest 4</td>
                       <td>name@linearhub.com</td>
-                      <td><input type="checkbox" name="check[]" id="check4" class="guest-email" checked/></td>
+                      <td><input type="checkbox" name="check[]" id="check4" class="guest-email" onchange="emailSelect()"></td>
                     </tr>
                   </table>
                    <!-- Add Email button -->
@@ -135,7 +135,12 @@
           }
         };
         // End Add Email JS
-        </script>
+        function emailSelect() {
+        if ( document.getElementsByClassName('guest-email').checked === false ) {
+            document.getElementsByClassName('guest-email:empty').style.display="none";
+        }
+        };
+        </script>none
 
     </body>
 </html>
