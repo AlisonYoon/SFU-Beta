@@ -60,12 +60,14 @@
               <h1 style="margin-top: 40px;">Your recording is on the way...!</h1>
               <p>With whom would you like to share your record with?</p>
                 <form action="" class="select-options check-emails join-call">
-                  <table id="guestEmailList" cellpadding="5">
-                    <tr>
-                      <td></td>
-                      <td></td>
-                      <td><input type="checkbox" id="selectallguests"/><label for="check1"  style="border-bottom:none;">Select all</label></td>
-                    </tr>
+                  <table id="guestEmailList" class="" cellpadding="5">
+                    <thead>
+                         <tr>
+                          <td></td>
+                          <td></td>
+                          <td><input type="checkbox" id="selectAllGuests"/><label for="check1"  style="border-bottom:none;">Select all</label></td>
+                        </tr>
+                    </thead>
                     <tr>
                       <td class="guest-name">Guest 1</td>
                       <td>francois@linearhub.com</td>
@@ -109,7 +111,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
           $(document).ready(function() {
-          $('#selectallguests').click(function(event) {
+          $('#selectAllGuests').click(function(event) {
           if(this.checked) {
               $('.guest-email').each(function() {
                   this.checked = true;

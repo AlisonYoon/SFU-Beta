@@ -255,9 +255,22 @@ table td {
 }
 .check-emails {
   width: 500px;
-  height: 265px;
+  height: 264px;
   overflow-y: scroll;
 }
+/* Table First Row Fixed */
+#guestEmailList thead tr{
+    display:block;
+}
+#guestEmailList th,table td{
+    width: 500px;//fixed width
+}
+#guestEmailList  tbody{
+  display:block;
+  height:200px;
+  overflow:auto;//set tbody to auto
+}
+/* End Table First Row Fixed */
 .guest-name {
     font-weight: 600;
 }
