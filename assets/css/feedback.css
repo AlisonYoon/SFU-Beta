@@ -32,19 +32,25 @@ h1 {
   border:1px solid red;
 }
 .room-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
 .video-view {
   position: relative;
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: column wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   width: 100%;
   z-index: 2;
@@ -56,16 +62,32 @@ h1 {
 .feedback-view, .record-send-view {
   width: 817px;
   height: 546px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background: #fff;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .select-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 60px;
 }
@@ -112,9 +134,8 @@ a.button2::before, .join-call a::before {
   /* left: -5em; */
   text-align: center;
   -webkit-transition: -webkit-box-shadow 0.5s ease-out;
-  transition: -webkit-box-shadow 0.5s ease-out;
+  -webkit-transition: box-shadow 0.5s ease-out;
   transition: box-shadow 0.5s ease-out;
-  transition: box-shadow 0.5s ease-out, -webkit-box-shadow 0.5s ease-out;
   z-index: -1;
   background: #C72844;
 }
@@ -122,8 +143,7 @@ a.button2:hover, .join-call a:hover {
   color: #fff;
 }
 a.button2:hover::before, .join-call a:hover::before {
-  -webkit-box-shadow: inset 0 0 0 10em #E8657C;
-          box-shadow: inset 0 0 0 10em #E8657C;
+  box-shadow: inset 0 0 0 10em #E8657C;
 }
 /* End Button Hover 2 */
 
@@ -152,7 +172,11 @@ input.radio:empty ~ label {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -231,4 +255,10 @@ table td {
 }
 .check-emails {
   width: 500px;
+}
+.guest-name {
+    font-weight: 600;
+}
+.add-email-button {
+    border: none;
 }

@@ -60,33 +60,38 @@
               <h1 style="margin-top: 40px;">Your recording is on the way...!</h1>
               <p>With whom would you like to share your record with?</p>
                 <form action="" class="select-options check-emails join-call">
-                  <table cellpadding="5">
+                  <table id="guestEmailList" cellpadding="5">
                     <tr>
                       <td></td>
                       <td></td>
                       <td><input type="checkbox" id="selectallguests"/><label for="check1">Select all</label></td>
                     </tr>
                     <tr>
-                      <td>Guest 1</td>
+                      <td class="guest-name">Guest 1</td>
                       <td>francois@linearhub.com</td>
                       <td><input type="checkbox" name="check[]" id="check1" class="guest-email" checked/></td>
                     </tr>
                     <tr>
-                      <td>Guest 2</td>
+                      <td class="guest-name">Guest 2</td>
                       <td>jiwook@linearhub.com</td>
                       <td><input type="checkbox" name="check[]" id="check2" class="guest-email" checked/></td>
                     </tr>
                     <tr>
-                      <td>Alison Yoon</td>
+                      <td class="guest-name">Alison Yoon</td>
                       <td>alison@linearhub.com</td>
                       <td><input type="checkbox" name="check[]" id="check3" class="guest-email" checked/></td>
                     </tr>
                     <tr>
-                      <td>Guest 4</td>
+                      <td class="guest-name">Guest 4</td>
                       <td>name@linearhub.com</td>
                       <td><input type="checkbox" name="check[]" id="check4" class="guest-email" checked/></td>
                     </tr>
                   </table>
+                   <!-- Add Email button -->
+                    <div class="add-email-button">
+                        <input type="button" value="+ Add email" class="top-buffer" onclick="addRow('guestEmailList')" />
+                    </div>
+                    <!-- End Add Email button -->
                   <a href="javascript:void(0)" title="Confirm" targe="_blank" class="button">Confirm</a>
                 </form>
                 <p class="send-note">Note: You can also share your video record later with the link that you will receive in the email.</p>
@@ -115,6 +120,21 @@
               });
           }});
         });
+        // Add Email JS
+        function addRow(tableID) {
+          var table = document.getElementById(tableID);
+          var rowCount = table.rows.length;
+          var row = table.insertRow(rowCount);
+          var colCount = table.rows[0].cells.length;
+
+          for(var i=0; i<colCount; i++) {
+            var newRow = row.insertCell(i);
+
+            newRow.innerHTML = table.rows[0].cells[i].innerHTML;
+            newRow.childNodes[0].value = "";
+          }
+        };
+        // End Add Email JS
         </script>
 
     </body>
