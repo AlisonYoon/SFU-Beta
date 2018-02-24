@@ -199,9 +199,10 @@ input.radio:empty ~ label {
 	color: #C2C2C2;
 } */
 
-input.radio:hover:not(:checked) ~ label {
-	color: #32353B;
+input.radio:hover:not(:checked) ~ label, #guestEmailList tr:hover {
+  color: #32353B;
   background: #E2F1F7;
+  cursor: pointer;
 }
 
 /* toggle on */
