@@ -255,6 +255,8 @@ table td {
 }
 .check-emails {
   width: 500px;
+  height: 265px;
+  overflow-y: scroll;
 }
 .guest-name {
     font-weight: 600;
