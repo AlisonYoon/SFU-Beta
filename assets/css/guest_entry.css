@@ -17,7 +17,7 @@ h1 {
   font-size: 22px;
   line-height: 30px;
   font-weight: 600;
-  align-self: flex-start;
+  /* align-self: flex-start; */
   margin-left: 65px;
 }
 h2 {
@@ -195,7 +195,7 @@ h2 {
   line-height: 22px;
 }
 /* Button Hover 2 */
-a.button2, .join-call a {
+a.button2, .join-call div.button {
   position: absolute;
   top: 0;
   left: 0;
@@ -218,7 +218,7 @@ a.button2, .join-call a {
   line-height: 250%;
   z-index: 1;
 }
-a.button2::before, .join-call a::before {
+a.button2::before, .join-call div.button::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -240,19 +240,19 @@ a.button2::before, .join-call a::before {
   z-index: -1;
   background: #C72844;
 }
-a.button2:hover, .join-call a:hover {
+a.button2:hover, .join-call div.button:hover {
   color: #fff;
 }
-a.button2:hover::before, .join-call a:hover::before {
+a.button2:hover::before, .join-call div.button:hover::before {
   -webkit-box-shadow: inset 0 0 0 10em #E8657C;
           box-shadow: inset 0 0 0 10em #E8657C;
 }
 /* End Button Hover 2 */
-.join-call a.button {
+.join-call div.button {
   top: 100px;
   width: 327px;
 }
-.join-call a.button::before {
+.join-call div.button::before {
   width: 327px;
   left: 0;
 }
@@ -366,3 +366,22 @@ _:-o-prefocus, .selector {
   margin-top: 66px;
 }
 /* End Access Denied CSS */
+
+/* Thank You Page CSS */
+.thank-you-msg {
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1.see-you-head {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 40px;
+}
+.see-you {
+  font-size: 18px;
+  color: #DDE1E7;
+}

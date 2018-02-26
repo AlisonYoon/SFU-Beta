@@ -263,9 +263,9 @@ table td {
 #guestEmailList thead tr{
     display:block;
 }
-#guestEmailList th,table td{
+/* #guestEmailList th,table td{
     width: 500px;//fixed width
-}
+} */
 #guestEmailList  tbody{
   display:block;
   height:200px;
@@ -281,14 +281,21 @@ table td {
     font-size: 16px;
     cursor: pointer;
 }
-/* hide checkbox input */
-input.guest-email:empty {
-	margin-left: -99999px;
+#additionalEmails {
+  border: 1px solid #DDE1E7;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  font-size: 16px;
 }
+/* hide checkbox input */
+/* input.guest-email:empty {
+	margin-left: -99999px;
+} */
 /* style checkbox label */
-input.guest-email:empty {
-    width: 80px;
-    height: 18px;
+.guest-email {
+  width: 80px;
+  height: 18px;
 	position: relative;
 	float: right;
 	line-height: 38px;
@@ -299,15 +306,12 @@ input.guest-email:empty {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: none;
 }
-
-input.guest-email:empty:before {
+.guest-email.showall {
+  display: block;
+}
+.guest-email:before {
 	position: absolute;
 	display: block;
 	top: 0;
