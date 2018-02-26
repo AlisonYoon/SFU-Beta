@@ -180,7 +180,7 @@ a.button2:hover::before, .join-call div.button:hover::before {
 }
 /* End Button Hover 2 */
 .join-call div.button {
-  top: 50px;
+  top: 50px; /* Just for Sign In page. */
   width: 327px;
 }
 .join-call div.button::before {
