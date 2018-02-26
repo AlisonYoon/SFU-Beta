@@ -651,6 +651,10 @@ bottom: 119px;
   width: 100%;
   height: calc(100% - 46px);
   background: rgba(0,0,0,.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
 }
 #chatArea .chat-msg-area .chat-area-header .close-button {
   width: 22px;
@@ -663,8 +667,21 @@ bottom: 119px;
   width: 100%;
   height: 46px;
   font-size: 16px;
+  padding: 10px;
 }
 .chat-area-open {
   transform: translateX(-275px);
+}
+#chatUserName1, #chatUserName2 {
+  font-size: 18px;
+  color: #fff;
+  line-height: 36px;
+}
+#chatUserName1Msg, #chatUserName2Msg  {
+  font-size: 16px;
+  color: #fff;
+  font-weight:lighter;
+  line-height: 24px;
+  margin-bottom: 20px;
 }
 /* End Chat Area CSS */
