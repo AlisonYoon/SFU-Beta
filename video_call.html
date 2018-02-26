@@ -245,12 +245,19 @@
             <!-- Video Call Control Box End -->
           </div>
           <!-- Video View End -->
-          <div class="chat-open-button visible">
+          <div class="chat-open-button visible" onclick="chatAreaOpen()">
             <img src="assets/images/icon/chat.png" alt="">
             Chat
           </div>
           <!-- Chat Button End -->
-          <div></div>
+          <div id="chatArea">
+            <div class="chat-msg-area">
+              <header class="chat-area-header">
+                <button class="close-button" onclick="chatAreaOpen()"></button>
+              </header>
+            </div>
+            <input id="chatMsgType" type="text" placeholder="Type here...">
+          </div>
           <div></div>
 
         </div>

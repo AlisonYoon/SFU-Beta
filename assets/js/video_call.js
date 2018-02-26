@@ -108,7 +108,7 @@ function toolVideoOnOff() {
   'box-shadow': 'inset 0px 0px 153px 34px rgba(0,0,0,0.8)'});
   };
 };
-// toolVideoOnOff() changed for my video off screen 
+// toolVideoOnOff() changed for my video off screen
 function toolMicOnOff() {
   if ($('.mic-btn').css('display')=='none') {
     $('.mic-btn-off').hide();
@@ -175,3 +175,11 @@ function fullScreenToolBox() {
   }
 };
 // Tool bar hide function
+function chatAreaOpen() {
+  $('.chat-open-button').toggleClass('chat-area-open');
+  if ($('#chatArea').css('width')=='0px') {
+    $('#chatArea').css('width','275px');
+  } else {
+    $('#chatArea').css('width','0');
+  };
+}
