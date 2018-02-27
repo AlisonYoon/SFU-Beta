@@ -244,7 +244,7 @@ a.skip-survey:visited {
 .record-send-view p.send-note {
   font-size: 16px;
 }
-table {
+/* table {
   border-collapse: collapse;
   cellpadding: 5;
 }
@@ -257,22 +257,25 @@ table td {
 }
 .check-emails {
   width: 500px;
-  height: 264px;
-  overflow-y: scroll;
+  height: 330px;
 }
 /* Table First Row Fixed */
-#guestEmailList thead tr{
+/* #guestEmailList thead tr{
     display:block;
 }
 /* #guestEmailList th,table td{
     width: 500px;//fixed width
 } */
-#guestEmailList  tbody{
+/* #guestEmailList  tbody{
   display:block;
   height:200px;
   overflow:auto;//set tbody to auto
-}
+} */
 /* End Table First Row Fixed */
+.select-options .radio ul {
+  list-style: none;
+  display: flex;
+}
 .guest-name {
     font-weight: 600;
 }
@@ -312,13 +315,13 @@ table td {
 .guest-email.showall {
   display: block;
 }
-.guest-email:before {
-	position: absolute;
+div.guest-email {
+	/* position: absolute; */
 	display: block;
-	top: 0;
+	/* top: 0;
 	bottom: 0;
 	left: 0;
-	content: '';
+	content: ''; */
 	width: 2.5em;
 	background: #D1D3D4;
 	border-radius: 3px 0 0 3px;
