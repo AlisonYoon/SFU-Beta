@@ -279,6 +279,7 @@ table td {
 .guest-name {
     font-weight: 600;
 }
+/*
 .add-email-button {
     border: none;
     color: #9B9B9B;
@@ -291,7 +292,7 @@ table td {
   height: 50px;
   width: 100%;
   font-size: 16px;
-}
+} */
 /* hide checkbox input */
 /* input.guest-email:empty {
 	margin-left: -99999px;
@@ -326,4 +327,11 @@ div.guest-email {
 	background: #D1D3D4;
 	border-radius: 3px 0 0 3px;
     background: url('../images/icon/check.png') no-repeat;
+}
+.more-emails {
+  width: 80%;
+  margin: 0 10%;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
 }

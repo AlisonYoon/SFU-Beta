@@ -65,9 +65,9 @@
               <h1 style="margin-top: 40px;">Your recording is on the way...!</h1>
               <p>With whom would you like to share your record with?</p>
                 <div class="select-options check-emails join-call">
-              <div class="radio">
+                    <div class="radio">
                         <ul>
-                          <li>Guest 1</li>
+                          <li class="guest-name">Guest 1</li>
                           <li>francois@linearhub.com</li>
                           <li><img src="assets/images/icon/check.png" alt=""></li>
                         </ul>
@@ -77,7 +77,7 @@
                     <div>
                       <div class="radio">
                         <ul>
-                          <li>Guest 1</li>
+                          <li class="guest-name">Guest 1</li>
                           <li>francois@linearhub.com</li>
                           <li><img src="assets/images/icon/check.png" alt=""></li>
                         </ul>
@@ -87,9 +87,9 @@
                     <div>
                       <div class="radio">
                         <ul>
-                          <li>Guest 1</li>
+                          <li class="guest-name">Guest 1</li>
                           <li>francois@linearhub.com</li>
-                          <li><img src="assets/images/icon/check.png" alt=""></li>
+                          <li><img src="assets/images/icon/check.png" alt="" style="display: none;"></li>
                         </ul>
                       </div>
                     </div>
@@ -97,19 +97,21 @@
                     <div>
                       <div class="radio">
                         <ul>
-                          <li>Guest 1</li>
+                          <li class="guest-name">Guest 1</li>
                           <li>francois@linearhub.com</li>
-                          <li><img src="assets/images/icon/check.png" alt=""></li>
+                          <li><img src="assets/images/icon/check.png" alt="" style="display:none;"></li>
                         </ul>
                       </div>
                     </div>
 
                     <div>
                       <div class="radio">
-                      <input type="text" name="" value="" placeholder="Add emails separate by commas">
+                      <input type="text" name="" value="" class="more-emails" placeholder="Add emails separate by commas">
                       </div>
                     </div>
-                    <a href="javascript:void(0)" title="Submit" targe="_blank" class="button">Submit</a>
+                    <a href="javascript:void(0)" title="Confirm" targe="_blank" class="button">Confirm</a>
+                    <p class="send-note">Note: You can also share your video record later with the link that you will receive in the email.</p>
+
                   </div>
                    <!-- Add Email button -->
                     <!-- <div class="add-email-button" onclick="appendRow('guestEmailList')">
@@ -117,9 +119,8 @@
                        <label for="additionalEmails">Add emails. Separate by commas</label>
                     </div> -->
                     <!-- End Add Email button -->
-                  <a href="javascript:void(0)" title="Confirm" target="_blank" class="button">Confirm</a>
+                  <!-- <a href="javascript:void(0)" title="Confirm" target="_blank" class="button">Confirm</a> -->
                 </div>
-                <p class="send-note">Note: You can also share your video record later with the link that you will receive in the email.</p>
               </div>
                 <!-- Record Send View End  -->
           </div>
