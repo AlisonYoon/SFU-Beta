@@ -148,19 +148,19 @@ a.button2:hover::before, .join-call a:hover::before {
 /* End Button Hover 2 */
 
 /* Select Options */
-label {
+/* label {
   width: 200px;
   border-radius: 3px;
   border-bottom: 1px solid #e4e4e4;
-}
+} */
 
 /* hide input */
-input.radio:empty {
+/* input.radio:empty {
 	margin-left: -99999px;
-}
+} */
 
 /* style label */
-input.radio:empty ~ label {
+div.radio {
   width: 500px;
 	position: relative;
 	float: left;
@@ -178,6 +178,7 @@ input.radio:empty ~ label {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 /* input.radio:empty ~ label:before {
@@ -199,30 +200,30 @@ input.radio:empty ~ label {
 	color: #C2C2C2;
 } */
 
-input.radio:hover:not(:checked) ~ label, #guestEmailList tr:hover {
+div.radio:hover, #guestEmailList tr:hover {
   color: #32353B;
   background: #E2F1F7;
   cursor: pointer;
 }
 
 /* toggle on */
-input.radio:checked ~ label:before {
+div.radio:checked:before {
 	/* content:'\2714'; */
 	/* text-indent: .9em; */
 	color: #9CE2AE;
 	background-color: #E2F1F7;
 }
 
-input.radio:checked ~ label {
+div.radio:checked  {
 	color: #32353B;
-    background: #E2F1F7;
+  background: #E2F1F7;
 }
 
 /* radio focus */
-input.radio:focus ~ label:before {
+/* input.radio:focus ~ label:before {
 	box-shadow: 0 0 0 3px #999;
-}
-.select-options div label img {
+} */
+.select-options div.radio img {
   margin-right: 28px;
 }
 /* End Select Options */
