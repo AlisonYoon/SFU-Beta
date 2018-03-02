@@ -23,7 +23,7 @@ h2 {
   right: 0;
   top: 0;
   z-index: 1;
-  border:1px solid red;
+  /* border:1px solid red; */
 }
 .room-wrap {
   display: flex;
@@ -43,7 +43,7 @@ h2 {
   width: 100%;
   z-index: 2;
   /* margin-bottom: 80px; */
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   background: url(../images/bg.jpg) no-repeat;
   background-size: cover;
 }
@@ -120,7 +120,7 @@ h2 {
   justify-content: space-around;
   width: 85%;
   position: relative;
-  border:2px solid pink;
+  /* border:2px solid pink; */
 }
 .screen-container.fullscreen{
 width: 100%;
@@ -129,7 +129,7 @@ flex: 1;
 .video-box {
 width: 48%;
 min-height: 100px;
-border: 1px solid #CCFF00;
+/* border: 1px solid #CCFF00; */
 position: relative;
 }
 /* video off added */
@@ -253,7 +253,7 @@ align-self: flex-end;
 margin-left: 19px;
 position: relative;
 transition: all .2s ease;
-border: 2px solid #000;
+/* border: 2px solid #000; */
 }
 .screenShareOwner.fullscreen{
 position: absolute;
@@ -269,7 +269,7 @@ bottom: 119px;
   z-index: 10;
   display: flex;
   transform: translateY(0%);
-  border: 2px solid #ffff66;
+  /* border: 2px solid #ffff66; */
 }
 .toolbarHide {
   transform: translateY(150%);
@@ -286,14 +286,14 @@ bottom: 119px;
   justify-content: space-between;
   margin: 0 auto;
   /* overflow: hidden; */
-  border: 2px solid #ff0066;
+  /* border: 2px solid #ff0066; */
 }
 .meeting-ctrl {
   justify-content: flex-end;
   display: flex;
   background-color: rgba(13,22,36,.5);
   /* overflow: hidden; */
-  border: 2px solid salmon;
+  /* border: 2px solid salmon; */
 }
 .video-toolbar-item {
   --button-text-color: #fff;
@@ -311,7 +311,8 @@ bottom: 119px;
   text-align: center;
   min-width: 72px;
   border-radius: 0;
-  border:2px solid green;
+  /* border:2px solid green; */
+  border: none;
   background: transparent;
   text-decoration: none;
   cursor: pointer;
@@ -358,7 +359,7 @@ bottom: 119px;
 }
 .video-frame {
   position: relative;
-  border: 2px solid #77e1f9;
+  /* border: 2px solid #77e1f9; */
 }
 .video-box:hover .videoView-topToolbar {
   opacity: 1;
@@ -435,7 +436,7 @@ bottom: 119px;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .room-activity .max-guest-number {
   z-index: 1;
@@ -466,7 +467,7 @@ bottom: 119px;
   background-color: rgba(0,0,0,0.5);
   box-shadow: 2px -2px 4px 0 rgba(87,87,87,0.5);
   flex-direction: column;
-  border: 2px solid #00ff7f;
+  /* border: 2px solid #00ff7f; */
 }
 .room-list-content div h1 {
   text-transform: uppercase;

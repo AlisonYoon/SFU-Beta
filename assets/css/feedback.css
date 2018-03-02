@@ -29,7 +29,7 @@ h1 {
   right: 0;
   top: 0;
   z-index: 1;
-  border:1px solid red;
+  /* border:1px solid red; */
 }
 .room-wrap {
   display: -webkit-box;
@@ -55,7 +55,7 @@ h1 {
   width: 100%;
   z-index: 2;
   /* margin-bottom: 80px; */
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   background: url(../images/bg.jpg) no-repeat;
   background-size: cover;
 }
