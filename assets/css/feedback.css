@@ -180,7 +180,12 @@ div.radio {
   align-items: center;
     border-bottom: 1px solid #e4e4e4;
 }
-
+div.radio ul li:first-child {
+  width: 100px;
+}
+div.radio ul li:nth-child(2) {
+  width: 270px;
+}
 /* input.radio:empty ~ label:before {
 	position: absolute;
 	display: block;
