@@ -528,6 +528,14 @@ bottom: 119px;
   align-items: center;
   text-decoration: none;
 }
+.room-list-item-wrapper div div.host-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.room-list-item-wrapper div div.host-name span {
+  font-size: 12px;
+}
 .room-list-item-wrapper div .camera-status-icon {
   margin-right: 11px;
   width: 35px;
