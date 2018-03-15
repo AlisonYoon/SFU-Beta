@@ -70,7 +70,12 @@ function videoHeight() {
 
 };
 function openAttendee() {
-   $("#roomActivity").toggle('open');
+   if($("#roomActivity").hasClass('open')){
+    $("#roomActivity").removeClass('open');
+    }
+    else{
+    $("#roomActivity").addClass('open');
+    }
 };
 function videoOnOff() {
     $("#cameraStatusIcon1").toggleClass('cam-off');

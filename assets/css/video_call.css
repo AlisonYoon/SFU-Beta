@@ -427,36 +427,39 @@ bottom: 119px;
 }
 /* Attendee list */
 .room-activity {
-  height: 100%;
-  z-index: 21;
-  flex: 1;
-  max-width: 248px;
-  transition-duration: .1s;
-  border-top-right-radius: 3px;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  /* border: 2px solid red; */
+height: 100%;
+z-index: 21;
+flex: 1;
+max-width: 248px;
+transition-duration: .1s;
+border-top-right-radius: 3px;
+display: none;
+justify-content: flex-end;
+flex-direction: column;
+/* border: 2px solid red; */
 }
+
 .room-activity .max-guest-number {
-  z-index: 1;
-  margin-bottom: 48px;
-  text-align: center;
+z-index: 1;
+margin-bottom: 48px;
+text-align: center;
 }
+
 .room-activity .max-guest-number p {
-  color: #fff;
-  font-size: 14px;
-  line-height: 17px;
+color: #fff;
+font-size: 14px;
+line-height: 17px;
 }
+
 .room-activity.open {
-  transform: translateX(-8px);
-  width: 100%;
+transform: translateX(-8px);
+width: 100%;
+display: flex;
 }
 
 .room-activity:not(.open) {
-flex: .00001;
 min-width: 0;
-transform: translateX(calc(-10% - 20px));
+transform: translateX(calc(-1000% - 8px));
 }
 .room-activity {
   transform: translateX(-8px);
