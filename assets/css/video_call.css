@@ -686,6 +686,7 @@ transform: translateX(calc(-1000% - 8px));
   background: url("../images/icon/close.png") no-repeat 50% 50%;
   border: none;
   cursor: pointer;
+  position: fixed;
 }
 #chatMsgType {
   width: 100%;
