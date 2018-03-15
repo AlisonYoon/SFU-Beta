@@ -18,7 +18,7 @@ h1 {
   line-height: 30px;
   font-weight: 600;
   /* align-self: flex-start; */
-  margin-left: 65px;
+  /* margin-left: 65px; */
 }
 h2 {
   color: #fff;
@@ -267,7 +267,7 @@ a.button2:hover::before, .join-call div.button:hover::before {
   /* border: 2px solid #eeee00; */
 }
 .save-btn .button2 {
-  margin: auto 65px;
+  margin: auto 0px;
 }
 .video-onoff, .mic-onoff, .settings {
   cursor: pointer;
@@ -315,13 +315,13 @@ button.close-button:focus {
 .setting-dropdown-row1, .setting-dropdown-row2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   /* border: 1px solid #33ffcc; */
   height: 72px;
 }
 .settings-msg {
   color: #fff;
-  margin: 0 35px 18px 65px;
+  margin: 0 35px 18px 0;
 }
 /*** Select Box ***/
 .styled-select {
