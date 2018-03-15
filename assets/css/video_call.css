@@ -429,13 +429,15 @@ bottom: 119px;
 .room-activity {
 height: 100%;
 z-index: 21;
-flex: 1;
+/* flex: 1; */
 max-width: 248px;
 transition-duration: .1s;
 border-top-right-radius: 3px;
 display: none;
 justify-content: flex-end;
 flex-direction: column;
+background: url(../images/bg.jpg) no-repeat;
+background-size: cover;
 /* border: 2px solid red; */
 }
 
@@ -452,7 +454,7 @@ line-height: 17px;
 }
 
 .room-activity.open {
-transform: translateX(-8px);
+transform: translateX(0px);
 width: 100%;
 display: flex;
 }

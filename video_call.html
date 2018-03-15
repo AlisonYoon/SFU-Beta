@@ -23,7 +23,51 @@
     <body>
       <section class="wrap">
         <div class="room-wrap">
+            <!-- Guest List -->
+           <div class="room-activity" id="roomActivity">
+            <aside class="room-list-content">
+              <header class="room-list-header">
+                <button class="close-button" onclick="openAttendee()"></button>
+              </header>
+              <div>
+                <h1>guest list</h1>
+                <ul>
+                  <li class="room-list-item">
+                    <article class="room-list-item-wrapper">
+                      <div id="videoOnOff" onclick="videoOnOff()">
+                        <div class="camera-status-icon" id="cameraStatusIcon1"></div>
+                        <div class="text-container">
+                          <div class="host-name">
+                            <p class="attendee-name">Kylo Ren</p>
+                            <span>(host)</span>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="video-sound" id="soundStatusIcon1" onclick="soundOnOff()"></button>
+                    </article>
+                  </li>
+                  <li class="room-list-item">
+                    <article class="room-list-item-wrapper">
+                      <div>
+                        <div class="camera-status-icon"></div>
+                        <div class="text-container"><p class="attendee-name">Ray</p></div>
+                      </div>
+                      <button class="video-sound"></button>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+            <div class="max-guest-number">
+              <p>Maximum 6 guests.</p>
+            </div>
+          </div>
+          <!-- End Guest List -->
+
+
           <div class="video-view">
+
+
             <!-- <div class="video-space-header">
               <div class="room-url-wrapper">
                 <div class="copy-button-wrapper">
@@ -33,7 +77,7 @@
               </div>
             </div> -->
             <!-- Video Room Header End -->
-            <div class="room-activity" id="roomActivity">
+            <!-- <div class="room-activity" id="roomActivity">
               <aside class="room-list-content">
                 <header class="room-list-header">
                   <button class="close-button" onclick="openAttendee()"></button>
@@ -70,7 +114,7 @@
               <div class="max-guest-number">
                 <p>Maximum 6 guests.</p>
               </div>
-            </div>
+            </div> -->
             <!-- Attendee List End  -->
             <!-- Leave Message Modal -->
             <div class="leave-modal-wrap" id="leave-msg">
