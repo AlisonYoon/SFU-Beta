@@ -30,10 +30,12 @@ function micOnOff() {
     $('.micOff').hide();
     $('.micOn').show();
     $('.micOnParent').show();
+    $('.mic-mute').addClass('none');
   } else if ($('.micOn').css('display')=='block') {
     $('.micOff').show();
     $('.micOn').hide();
     $('.micOnParent').hide();
+    $('.mic-mute').removeClass('none');
   };
 };
 function settingsBox() {

@@ -103,7 +103,9 @@ h2 {
   left:0;
   z-index: 20;
   max-width: 100%;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 .videoView-bottomLeftName p, .videoView-bottomLeftName input {
   margin: 0 6px;

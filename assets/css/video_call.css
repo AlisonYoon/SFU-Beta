@@ -452,10 +452,15 @@ bottom: 119px;
   transform: translateX(-8px);
   width: 100%;
 }
+
 .room-activity:not(.open) {
-  flex: .00001;
-  min-width: 0;
-  transform: translateX(calc(-1000% - 8px));
+flex: .00001;
+min-width: 0;
+transform: translateX(calc(-10% - 20px));
+}
+.room-activity {
+  transform: translateX(-8px);
+  width: 100%;
 }
 .room-list-content {
   width: 248px;
