@@ -537,6 +537,11 @@ transform: translateX(calc(-1000% - 8px));
   cursor: pointer;
   align-items: center;
   text-decoration: none;
+  position: relative;
+}
+.room-list-item-wrapper div div.text-container {
+  position: absolute;
+  left: 60px;
 }
 .room-list-item-wrapper div div.host-name {
   display: flex;
