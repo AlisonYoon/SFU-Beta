@@ -1,0 +1,202 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Feedback</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!--Google fonts links-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+
+        <!-- Sign Up page css  -->
+        <link rel="stylesheet" href="assets/css/slack_feedback.css">
+
+
+    </head>
+    <body>
+      <section class="wrap">
+        <div class="room-wrap">
+          <div class="video-view">
+            <div class="feedback-view none">
+            <h1 style="margin-top: 40px;">How was your experience?</h1>
+              <div class="select-options join-call">
+                <div>
+                  <div class="radio">
+                  <img src="assets/images/icon/signal-4.png" alt="">Great - I loved it
+                  </div>
+                </div>
+
+                <div>
+                  <div class="radio">
+                  <img src="assets/images/icon/signal-3.png" alt="">Good - It worked well
+                  </div>
+                </div>
+
+                <div>
+                  <div class="radio">
+                  <img src="assets/images/icon/signal-2.png" alt="">Okay - It was adequate
+                  </div>
+                </div>
+
+                <div>
+                  <div class="radio">
+                  <img src="assets/images/icon/signal-1.png" alt="">Poor - Meeting was interrupted
+                  </div>
+                </div>
+
+                <div>
+                  <div class="radio">
+                  <img src="assets/images/icon/signal-0.png" alt="">Bad - Impossible to have a meeting
+                  </div>
+                </div>
+                <a href="javascript:void(0)" title="Submit" targe="_blank" class="button">Submit</a>
+              </div>
+              <a href="" class="skip-survey">Skip</a>
+            </div>
+              <!-- Feedback View End  -->
+              <div class="record-send-view block">
+              <h1 style="margin-top: 40px;">Your recording is on the way...!</h1>
+              <p>With whom would you like to share your record with?</p>
+                <div class="select-options check-emails">
+                  <div class="radio">
+                      <ul>
+                        <li class="guest-name"><img src="assets/images/icon/mail.png" alt="" style="margin-right:0;">Email</li>
+                        <li></li>
+                        <li>Select all</li>
+                      </ul>
+                  </div>
+
+                    <div class="radio">
+                        <ul>
+                          <li class="guest-name">Guest 1</li>
+                          <li>francois@linearhub.com</li>
+                          <li><img src="assets/images/icon/check.png" alt=""></li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                      <div class="radio">
+                        <ul>
+                          <li class="guest-name">Guest 1</li>
+                          <li>francois@linearhub.com</li>
+                          <li><img src="assets/images/icon/check.png" alt=""></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="radio">
+                        <ul>
+                          <li class="guest-name">Guest 1</li>
+                          <li>francois@linearhub.com</li>
+                          <li><img src="assets/images/icon/check.png" alt="" style="display: none;"></li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                    <div>
+                      <div class="radio">
+                      <input type="text" name="" value="" class="more-emails" placeholder="Add emails separate by commas">
+                      </div>
+                    </div>
+                    <a href="javascript:void(0)" title="Confirm" targe="_blank" class="button">Confirm</a>
+                    <p class="send-note">Note: You can also share your video record later with the link that you will receive in the email.</p>
+
+                  </div>
+                   <!-- Add Email button -->
+                    <!-- <div class="add-email-button" onclick="appendRow('guestEmailList')">
+                       <input type="text" id="additionalEmails">
+                       <label for="additionalEmails">Add emails. Separate by commas</label>
+                    </div> -->
+                    <!-- End Add Email button -->
+                  <!-- <a href="javascript:void(0)" title="Confirm" target="_blank" class="button">Confirm</a> -->
+                </div>
+              </div>
+                <!-- Record Send View End  -->
+          </div>
+          <!-- Video View End -->
+
+
+        </div>
+      </section>
+
+
+        <script src="assets/js/video_call.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+          $(document).ready(function() {
+          $('#selectAllGuests').click(function(event) {
+          if($('.guest-email')) {
+              $('.guest-email').each(function() {
+                  this.addClass('showall');
+              });
+          }else{
+              $('.guest-email').each(function() {
+                  this.checked = false;
+              });
+          }});
+        });
+        // Add Email JS
+//        function addRow(tableID) {
+//          var table = document.getElementById(tableID);
+//          var rowCount = table.rows.length;
+//          var row = table.insertRow(rowCount);
+//          var colCount = table.rows[0].cells.length;
+//
+//          for(var i=0; i<colCount; i++) {
+//            var newRow = row.insertCell(i);
+//
+//            newRow.innerHTML = table.rows[0].cells[i].innerHTML;
+//            newRow.childNodes[0].value = "";
+//          }
+//        };
+
+
+        // var nameRow = 0; // initialize number of nameList rows
+        // var cellCount = 0; // initialize number of cells for each List row
+        // function appendRow(id, style) { // find the id of the table, only add row to that table
+        //   var table = document.getElementById(id); // table reference by id.
+        //   length = table.length, // find table length
+        //   row = table.insertRow(table.rows.length); // append table row, which increases lenght of table
+        //   row.setAttribute('id', style); // set so the rows can have IDs
+        //   var i;
+        //
+        //   // each row count will only go to the matched table
+        //   if (table.id == 'guestEmailList') {
+        //     row.id = table.id + ' row' + nameRow; // ex: custList row0
+        //     for (i = 0; i < table.rows[0].cells.length; i++) {
+        //         createCell(row.insertCell(i), i, table.id + nameRow + '.' + i); // count restarts on every row
+        //         cellCount++ // cell count is added only within the row and table.
+        //     }
+        //     nameRow++
+        //   }
+        //
+        // }
+        // function createCell(cell, text, style) {
+        //   var div = document.createElement('input'), // create DIV element
+        //       txt = document.createTextNode('_');  // create text node
+        //   div.appendChild(txt);                    // append text node to the DIV
+        //   div.setAttribute('id', style);           // set DIV class attribute
+        //   div.setAttribute('idName', style);       // set DIV class attribute for IE (?!)
+        //   cell.appendChild(div);                   // append DIV to the table cell
+        // }
+        //
+        // // End Add Email JS
+        // function emailSelect() {
+        // if ( document.getElementsByClassName('guest-email').checked === false ) {
+        //     document.getElementsByClassName('guest-email:empty').style.display="none";
+        // }
+        // };
+        </script>
+
+    </body>
+</html>
