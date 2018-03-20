@@ -60,8 +60,8 @@ h1 {
   background-size: cover;
 }
 .feedback-view, .record-send-view {
-  width: 817px;
-  height: 546px;
+  width: 850px;
+  height: 800px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -155,13 +155,13 @@ a.button2:hover::before, .join-call a:hover::before {
 } */
 
 /* hide input */
-/* input.radio:empty {
+/* input.radio1:empty {
 	margin-left: -99999px;
 } */
 
 /* style label */
-div.radio {
-  width: 500px;
+div.radio1 {
+  width: 600px;
 	position: relative;
 	float: left;
 	line-height: 38px;
@@ -178,15 +178,15 @@ div.radio {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-    border-bottom: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
 }
-div.radio ul li:first-child {
-  width: 111px;
+div.radio1 ul li:first-child {
+  width: 118px;
 }
-div.radio ul li:nth-child(2) {
-  width: 270px;
+div.radio1 ul li:nth-child(2) {
+  width: 280px;
 }
-/* input.radio:empty ~ label:before {
+/* input.radio1:empty ~ label:before {
 	position: absolute;
 	display: block;
 	top: 0;
@@ -199,36 +199,36 @@ div.radio ul li:nth-child(2) {
 } */
 
 /* toggle hover */
-/* input.radio:hover:not(:checked) ~ label:before {
+/* input.radio1:hover:not(:checked) ~ label:before {
 	content:'\2714';
 	text-indent: .9em;
 	color: #C2C2C2;
 } */
 
-div.radio:hover, #guestEmailList tr:hover {
+div.radio1:hover, #guestEmailList tr:hover {
   color: #32353B;
   background: #E2F1F7;
   cursor: pointer;
 }
 
 /* toggle on */
-div.radio:checked:before {
+div.radio1:checked:before {
 	/* content:'\2714'; */
 	/* text-indent: .9em; */
 	color: #9CE2AE;
 	background-color: #E2F1F7;
 }
 
-div.radio:checked  {
+div.radio1:checked  {
 	color: #32353B;
   background: #E2F1F7;
 }
 
-/* radio focus */
-/* input.radio:focus ~ label:before {
+/* radio1 focus */
+/* input.radio1:focus ~ label:before {
 	box-shadow: 0 0 0 3px #999;
 } */
-.select-options div.radio img {
+.select-options div.radio1 img {
   margin-right: 28px;
 }
 /* End Select Options */
@@ -277,7 +277,7 @@ table td {
   overflow:auto;//set tbody to auto
 } */
 /* End Table First Row Fixed */
-.select-options .radio ul {
+.select-options .radio1 ul {
   list-style: none;
   display: flex;
 }
@@ -339,4 +339,11 @@ div.guest-email {
   font-size: 16px;
   padding: 10px;
   border-radius: 5px;
+}
+
+.slack-private ul li {
+  color: #B7B7B7;
+}
+div#radio1-firstrow:hover, div#radio1-secondrow:hover {
+  background: none;
 }
