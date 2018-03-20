@@ -61,7 +61,7 @@ h1 {
 }
 .feedback-view, .record-send-view {
   width: 850px;
-  height: 800px;
+  height: 700px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -75,7 +75,7 @@ h1 {
   -ms-flex-align: center;
   align-items: center;
 }
-.select-options {
+.select-options1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,13 +89,13 @@ h1 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 30px;
 }
-.select-options div, .select-options table {
+.select-options1 div, .select-options1 table {
   width: 100%;
 }
 /* Button Hover 2 */
-a.button2, .join-call a {
+div.button2, .join-call div.button {
   position: absolute;
   /* top: 0;
   left: 0;
@@ -118,7 +118,7 @@ a.button2, .join-call a {
   line-height: 250%;
   z-index: 1;
 }
-a.button2::before, .join-call a::before {
+div.button2::before, .join-call div::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -139,10 +139,10 @@ a.button2::before, .join-call a::before {
   z-index: -1;
   background: #C72844;
 }
-a.button2:hover, .join-call a:hover {
+div.button2:hover, .join-call div:hover {
   color: #fff;
 }
-a.button2:hover::before, .join-call a:hover::before {
+div.button2:hover::before, .join-call div:hover::before {
   box-shadow: inset 0 0 0 10em #E8657C;
 }
 /* End Button Hover 2 */
@@ -228,7 +228,7 @@ div.radio1:checked  {
 /* input.radio1:focus ~ label:before {
 	box-shadow: 0 0 0 3px #999;
 } */
-.select-options div.radio1 img {
+.select-options1 div.radio1 img {
   margin-right: 28px;
 }
 /* End Select Options */
@@ -277,7 +277,7 @@ table td {
   overflow:auto;//set tbody to auto
 } */
 /* End Table First Row Fixed */
-.select-options .radio1 ul {
+.select-options1 .radio1 ul {
   list-style: none;
   display: flex;
 }
