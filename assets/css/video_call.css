@@ -358,6 +358,10 @@ bottom: 119px;
   margin: 0 auto;
   height: 24px;
 }
+#recBtn div { /* Guest screen, and when 1 hour free recording is finished. */
+  color: #fff;
+  opacity: .2;
+}
 .video-toolbar-item img.rec-btn {
   height: 54px;
   position: absolute;
