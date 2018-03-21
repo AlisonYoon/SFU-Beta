@@ -541,6 +541,11 @@ transform: translateX(calc(-1000% - 8px));
   z-index: 2;
   /* border: 2px solid #ccff00; */
 }
+.chat-area-header {
+  background: rgba(0,0,0,.5);
+  margin-bottom: 0px;
+  height: 30px;
+}
 .room-list-header button.close-button {
   width: 22px;
   height: 22px;
@@ -713,17 +718,17 @@ transform: translateX(calc(-1000% - 8px));
 }
 .chat-msg-area {
   width: 100%;
-  height: calc(100% - 46px);
+  height: calc(100% - 76px);
   background: rgba(0,0,0,.5);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
-  -webkit-box-shadow: inset 0px 60px 50px -20px rgba(0,0,0,0.75);
+  /* -webkit-box-shadow: inset 0px 60px 50px -20px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px 60px 50px -20px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 60px 50px -20px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 60px 50px -20px rgba(0,0,0,0.75); */
 }
-#chatArea .chat-msg-area .chat-area-header .close-button {
+#chatArea .chat-area-header .close-button {
   width: 22px;
   height: 22px;
   background: url("../images/icon/close.png") no-repeat 50% 50%;
@@ -738,7 +743,7 @@ transform: translateX(calc(-1000% - 8px));
   padding: 10px;
 }
 .chat-area-open {
-  transform: translateX(-275px);
+  transform: translateX(-320px);
 }
 #chatUserName1, #chatUserName2 {
   font-size: 18px;
