@@ -188,3 +188,8 @@ function chatAreaOpen() {
     $('#chatArea').css('width','0');
   };
 }
+
+// Copy Link button click
+const copyLinkClick = () => {
+  $('.copy-link-msg').text("Copied!");
+}
