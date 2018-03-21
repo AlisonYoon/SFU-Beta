@@ -183,7 +183,7 @@ function fullScreenToolBox() {
 function chatAreaOpen() {
   $('.chat-open-button').toggleClass('chat-area-open');
   if ($('#chatArea').css('width')=='0px') {
-    $('#chatArea').css('width','275px');
+    $('#chatArea').css('width','320px');
   } else {
     $('#chatArea').css('width','0');
   };
