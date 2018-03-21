@@ -343,6 +343,7 @@ bottom: 119px;
   background: transparent;
   text-decoration: none;
   cursor: pointer;
+  outline: none;
 }
 .video-toolbar-item:hover {
   background: rgba(13,22,36,.7);
@@ -438,6 +439,7 @@ bottom: 119px;
   z-index: 20;
   max-width: 100%;
   display: flex;
+  background: rgba(0,0,0,.5);
 }
 .videoView-bottomLeftName p, .videoView-bottomLeftName input {
   margin: 0 6px;
