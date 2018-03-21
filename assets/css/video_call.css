@@ -120,7 +120,7 @@ h2 {
   top: -10px;
   left: -10px;
 }
-.chat-msg-banner {
+.chat-msg-banner, .rec-disabled-msg {
   font-size: 12px;
   width: 288px;
   height: 29px;
@@ -130,9 +130,16 @@ h2 {
   letter-spacing: 1px;
   font-weight: normal;
   position: absolute;
+  line-height: 27px;
+}
+.chat-msg-banner {
   top: -50px;
   left: -248px;
-  line-height: 27px;
+}
+.rec-disabled-msg {
+  color: #fff;
+  top: -60px;
+  text-transform: none;
 }
 .screen-container {
   display: -webkit-box;

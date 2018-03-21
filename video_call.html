@@ -267,11 +267,11 @@
                   Copy link
                 </div>
                 <!-- Host entered alone, record start/end message area -->
-                <div class="room-msg-wrapper">
+                <!-- <div class="room-msg-wrapper">
                   <div class="rec-start none">Recording started. It will be delivered to your email after the call.</div>
                   <div class="rec-end none">Recording stopped. It will be delivered to your email after the call.</div>
                   <div class="first-guest block">You are the first guest. Invite people to start the meeting.</div>
-                </div>
+                </div> -->
                 <!-- End Host entered alone, record start/end message area -->
               </div>
             </div>
@@ -284,7 +284,10 @@
                   <button class="video-toolbar-item" onclick="toolVideoOnOff()" style="width: 105.05px;"><img src="assets/images/icon/video-on.png" alt="" class="video-btn videoOn"><img src="assets/images/icon/video-off.png" alt="" class="video-btn-off videoOff"><div>video on</div></button> <!-- Class added for video off -->
                   <button class="video-toolbar-item" onclick="toolMicOnOff()" style="width: 88.2px;"><img src="assets/images/icon/mic-on.png" alt="" class="mic-btn"><img src="assets/images/icon/mic-off.png" alt="" class="mic-btn-off"><div>mic on</div></button>
                   <!-- End Video, Mic on off  -->
-                  <button class="video-toolbar-item" id="recBtn" onclick="recOnOff()"><img src="assets/images/icon/recording-off.png" alt="" class="rec-btn"><img src="assets/images/icon/recording-on.png" alt="" class="rec-btn-on"><div>rec</div></button>
+
+                  <button class="video-toolbar-item" id="recBtn" onclick="recOnOff()"><img src="assets/images/icon/recording-off.png" alt="" class="rec-btn"><img src="assets/images/icon/recording-on.png" alt="" class="rec-btn-on"><div>rec</div>
+                      <p class="rec-disabled-msg">Recording is available only for host.</p>
+                  </button>
                   <button class="video-toolbar-item"><img src="assets/images/icon/present.png" alt=""><div>present</div></button>
                   <button class="video-toolbar-item"><img src="assets/images/icon/settings.png" alt=""><div>settings</div></button>
                   <a class="video-toolbar-item leave-button" href="#leave-msg"><img src="assets/images/icon/leave.png" alt=""><div>leave</div></a>
