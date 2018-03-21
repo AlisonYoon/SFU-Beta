@@ -717,16 +717,17 @@ transform: translateX(calc(-1000% - 8px));
   /* border: 2px solid #feff73; */
 }
 .chat-msg-area {
-  width: 100%;
-  height: calc(100% - 76px);
-  background: rgba(0,0,0,.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px;
-  /* -webkit-box-shadow: inset 0px 60px 50px -20px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px 60px 50px -20px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 60px 50px -20px rgba(0,0,0,0.75); */
+width: 100%;
+height: calc(100% - 76px);
+background: rgba(0,0,0,.5);
+display: flex;
+flex-direction: column-reverse;
+overflow-y: auto;
+/* // justify-content: flex-end; */
+padding: 10px;
+/* // -webkit-box-shadow: inset 0px 60px 50px -20px rgba(0,0,0,1);
+// -moz-box-shadow: inset 0px 60px 50px -20px rgba(0,0,0,1);
+// box-shadow: inset 0px 60px 50px -20px rgba(0,0,0,1); */
 }
 #chatArea .chat-area-header .close-button {
   width: 22px;
