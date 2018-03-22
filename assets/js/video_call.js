@@ -193,3 +193,15 @@ function chatAreaOpen() {
 const copyLinkClick = () => {
   $('.copy-link-msg').text("Copied!");
 }
+
+// Notification banner show hide
+const notificationBanner = () => {
+  $('.notification-wrapper').toggleClass('visible');
+  if($('.notification-msg').css('width')= 0){
+    $('.notification-msg').css('width','320px');
+    $('.notification-msg').css('transform','translateX(-300px)');
+  } else {
+    $('.notification-msg').css('width',0);
+    $('.notification-msg').css('transform','translateX(300px)');
+  }
+}

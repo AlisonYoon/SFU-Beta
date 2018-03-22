@@ -84,7 +84,17 @@ h2 {
 .rec-start, .rec-end, .first-guest {
   line-height: 24px;
 }
-.chat-open-button {
+.notification-wrapper {
+  position: absolute;
+  color: #fff;
+  right: 300px;
+  top: 50px;
+  /* overflow: hidden; */
+}
+p.notification-msg {
+  padding: 0 10px;
+}
+.chat-open-button{
   position: absolute;
   right: 34px;
   bottom: 32px;
@@ -101,7 +111,7 @@ h2 {
   cursor: pointer;
   transition: all .2s ease;
 }
-.chat-open-button.visible {
+.chat-open-button.visible, .notification-wrapper.visible {
   z-index: 800;
   opacity: 1;
   /* transition-duration: .3s;
@@ -120,7 +130,7 @@ h2 {
   top: -10px;
   left: -10px;
 }
-.chat-msg-banner, .rec-disabled-msg {
+.chat-msg-banner, .rec-disabled-msg, .notification-msg {
   font-size: 12px;
   width: 288px;
   height: 29px;
