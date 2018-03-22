@@ -155,7 +155,9 @@ h2 {
   height: 35px;
   margin-bottom: 13px;
 }
-
+.micOn {
+  min-height: 28px; /*preventing mic icon resizing*/
+}
 /*** Mic On Volumn Animation  ***/
 #rectangle {
   width: 9px;
