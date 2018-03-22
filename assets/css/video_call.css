@@ -91,8 +91,15 @@ h2 {
   top: 50px;
   /* overflow: hidden; */
 }
+.notification-wrapper img {
+  margin-right: 16px;
+}
 p.notification-msg {
   padding: 0 10px;
+  height: 52px; /* when it's single line. {height: 29px;} height changes accordingly. */
+  display: flex;
+  align-items: center;
+  line-height: 17px; /* when it's single line. line-height default is 27px. it changes accordingly. */
 }
 .chat-open-button{
   position: absolute;
@@ -134,8 +141,7 @@ p.notification-msg {
   font-size: 12px;
   width: 288px;
   height: 29px;
-  background: #000;
-  opacity: 0.55;
+  background: rgba(0, 0, 0, .55);
   border-radius: 5px;
   letter-spacing: 1px;
   font-weight: normal;
