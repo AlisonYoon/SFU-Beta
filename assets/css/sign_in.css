@@ -127,7 +127,7 @@ h1 {
   line-height: 22px;
 }
 /* Button Hover 2 */
-a.button2, .join-call div.button {
+/* a.button2, .join-call div.button {
   position: absolute;
   top: 0;
   left: 0;
@@ -177,16 +177,16 @@ a.button2:hover, .join-call div.button:hover {
 a.button2:hover::before, .join-call div.button:hover::before {
   -webkit-box-shadow: inset 0 0 0 10em #E8657C;
           box-shadow: inset 0 0 0 10em #E8657C;
-}
+} */
 /* End Button Hover 2 */
-.join-call div.button {
-  top: 50px; /* Just for Sign In page. */
+/* .join-call div.button {
+  top: 50px;
   width: 327px;
 }
 .join-call div.button::before {
   width: 327px;
   left: 0;
-}
+} */
 
 
 /* New Button */
