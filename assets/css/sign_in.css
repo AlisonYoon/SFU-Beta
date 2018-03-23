@@ -187,3 +187,85 @@ a.button2:hover::before, .join-call div.button:hover::before {
   width: 327px;
   left: 0;
 }
+
+
+/* New Button */
+button.new-button {
+  position: absolute;
+  left:0;
+  top: 50%;
+  -webkit-transform: translateX(0) translateY(-50%);
+          transform: translateX(0) translateY(-50%);
+}
+.join-call button.new-button {
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(50%);
+          transform: translateX(-50%) translateY(50%);
+}
+
+button.new-button {
+  background: #C72844;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 25px;
+  font-family: 'Open-sans', sans-serif;
+  -webkit-transition: .3s;
+  transition: .3s;
+  overflow: hidden;
+}
+button.new-button:focus {
+  outline: 0;
+}
+button.new-button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .5;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  -webkit-transform: translateX(-100px) skewX(-15deg);
+          transform: translateX(-100px) skewX(-15deg);
+}
+button.new-button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: translateX(-100px) skewX(-15deg);
+          transform: translateX(-100px) skewX(-15deg);
+}
+button.new-button:hover {
+  background: #E8657C;
+  cursor: pointer;
+}
+button.new-button:hover:before {
+  -webkit-transform: translateX(300px) skewX(-15deg);
+          transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+button.new-button:hover:after {
+  -webkit-transform: translateX(300px) skewX(-15deg);
+          transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+/* End New Button */
