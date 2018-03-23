@@ -130,6 +130,7 @@ h2 {
 }
 .setting-tool-box div {
   width: 103px;
+  height: 103px;
   display: flex;
   flex-direction: column;
   align-items: center;
