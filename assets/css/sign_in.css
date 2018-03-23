@@ -190,20 +190,20 @@ a.button2:hover::before, .join-call div.button:hover::before {
 
 
 /* New Button */
-button.new-button {
+button.new-button1 {
   position: absolute;
   left:0;
   top: 50%;
   -webkit-transform: translateX(0) translateY(-50%);
           transform: translateX(0) translateY(-50%);
 }
-.join-call button.new-button {
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(50%);
-          transform: translateX(-50%) translateY(50%);
+.join-call button.new-button1 {
+  left:0%;
+  -webkit-transform: translateX(0%) translateY(50%);
+          transform: translateX(0%) translateY(50%);
 }
 
-button.new-button {
+button.new-button1 {
   background: #C72844;
   color: #fff;
   width: 200px;
@@ -216,10 +216,10 @@ button.new-button {
   transition: .3s;
   overflow: hidden;
 }
-button.new-button:focus {
+button.new-button1:focus {
   outline: 0;
 }
-button.new-button:before {
+button.new-button1:before {
   content: '';
   display: block;
   position: absolute;
@@ -234,7 +234,7 @@ button.new-button:before {
   -webkit-transform: translateX(-100px) skewX(-15deg);
           transform: translateX(-100px) skewX(-15deg);
 }
-button.new-button:after {
+button.new-button1:after {
   content: '';
   display: block;
   position: absolute;
@@ -249,18 +249,18 @@ button.new-button:after {
   -webkit-transform: translateX(-100px) skewX(-15deg);
           transform: translateX(-100px) skewX(-15deg);
 }
-button.new-button:hover {
+button.new-button1:hover {
   background: #E8657C;
   cursor: pointer;
 }
-button.new-button:hover:before {
+button.new-button1:hover:before {
   -webkit-transform: translateX(300px) skewX(-15deg);
           transform: translateX(300px) skewX(-15deg);
   opacity: 0.6;
   -webkit-transition: .7s;
   transition: .7s;
 }
-button.new-button:hover:after {
+button.new-button1:hover:after {
   -webkit-transform: translateX(300px) skewX(-15deg);
           transform: translateX(300px) skewX(-15deg);
   opacity: 1;
