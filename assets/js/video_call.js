@@ -215,6 +215,6 @@ function settingsBox1() {
   } else {
     $('.settings-box').fadeOut(200);
     $('test-video-container1').css('display','none');
-    $('.settings-box').css('display','none');
+    //$('.settings-box').css('display','none');
   };
 };
