@@ -23,6 +23,7 @@
     <body>
       <section class="wrap">
         <div class="room-wrap">
+
             <!-- Guest List -->
            <div class="room-activity" id="roomActivity">
             <aside class="room-list-content">
@@ -129,6 +130,7 @@
              </figure>
             </div>
             <!-- End Leave Message Modal  -->
+
             <div id ="screenContainer" class="screen-container" onclick="fullScreenToolBox()"><!-- Tool Bar hide -->
               <div class="video-box" id="videoBox"  onclick="videoHeight()">
                 <div style="height: 100%;">
@@ -258,6 +260,81 @@
                 </div>
               </div>
               <!-- video box 6 -->
+
+            <!-- Setting Box -->
+            <div class="test-video-container1">
+              <div class="video-box1" onload="videoHeight()">
+                <div style="height: 100%;">
+                  <div class="video-frame" id="videoFrame" style="height: 100%;">
+                    video
+                  </div>
+                  <!-- This is where Video goes -->
+                </div>
+              </div>
+                <div class="settings-box">
+                  <div class="settings-header">
+                    <h1>Settings</h1>
+                    <button class="close-button" onclick="settingsBox1()"></button>
+                  </div>
+                  <div class="settings-dropdown">
+                    <form class="settings-form">
+                      <div class="setting-dropdown-row1">
+                        <div>
+                          <h2>Camera</h2>
+                          <div class="styled-select">
+                             <select name ="camera">
+                               <option>FaceTime HD Camera</option>
+                               <option>The second option</option>
+                             </select>
+                            <span class="fa fa-sort-desc"></span>
+                          </div>
+                        </div>
+                        <div>
+                          <h2>Microphone</h2>
+                          <div class="styled-select">
+                             <select name="microphone">
+                               <option>FaceTime HD Camera</option>
+                               <option>The second option</option>
+                             </select>
+                            <span class="fa fa-sort-desc"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="setting-dropdown-row2">
+                        <div>
+                          <h2>Video quality</h2>
+                          <div class="styled-select">
+                             <select name="video quality">
+                               <option>FaceTime HD Camera</option>
+                               <option>The second option</option>
+                             </select>
+                            <span class="fa fa-sort-desc"></span>
+                          </div>
+                        </div>
+                        <div>
+                          <h2>Sound output</h2>
+                          <div class="styled-select">
+                             <select>
+                               <option>FaceTime HD Camera</option>
+                               <option>The second option</option>
+                             </select>
+                            <span class="fa fa-sort-desc"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="save-btn">
+                        <!-- <a href="javascript:void(0)" title="Save settings" targe="_blank" class="button2">Save setting</a> -->
+                        <button class="new-button">Save setting</button>
+                      </div>
+                      <div class="settings-msg">
+                        <p>Updating your settings will refresh your browser.</p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+            <!-- End Setting Box  -->
+
             </div>
             <!-- Video Screen Area End -->
             <div class="video-space-header">
@@ -289,7 +366,7 @@
                       <p class="rec-disabled-msg">Recording is available only for host.</p>
                   </button>
                   <button class="video-toolbar-item"><img src="assets/images/icon/present.png" alt=""><div>present</div></button>
-                  <button class="video-toolbar-item"><img src="assets/images/icon/settings.png" alt=""><div>settings</div></button>
+                  <button class="video-toolbar-item" onclick="settingsBox1()"><img src="assets/images/icon/settings.png" alt=""><div>settings</div></button>
                   <a class="video-toolbar-item leave-button" href="#leave-msg"><img src="assets/images/icon/leave.png" alt=""><div>leave</div></a>
                 </div>
               </div>
@@ -328,6 +405,7 @@
 
         </div>
       </section>
+
 
 
         <script src="assets/js/video_call.js"></script>

@@ -205,3 +205,16 @@ const notificationBanner = () => {
     $('.notification-msg').css('transform','translateX(300px)');
   }
 }
+
+// Setting Box modal
+function settingsBox1() {
+  if ($('.test-video-container1').css('display') == 'none') {
+    $('test-video-container1').css('display','flex');
+    $('.settings-box').fadeIn(200);
+    $('.settings-box').css('display','flex');
+  } else {
+    $('.settings-box').fadeOut(200);
+    $('test-video-container1').css('display','none');
+    $('.settings-box').css('display','none');
+  };
+};
