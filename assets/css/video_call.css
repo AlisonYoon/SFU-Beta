@@ -440,12 +440,14 @@ bottom: 119px;
   border: none;
 }
 .videoView-topToolbar button figure {
-  height: 100%;
-  width: 100%;
+  height: 30px;
+  width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
+  border-radius:15px;
+  background: rgba(0,0,0,.5);
 }
 .videoView-topToolbar button figure div {
   background-color: rgba(0,0,0,0.7);
@@ -468,6 +470,7 @@ bottom: 119px;
   left:0;
   z-index: 20;
   max-width: 100%;
+  width: 150px;
   display: flex;
   background: rgba(0,0,0,.5);
 }
