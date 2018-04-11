@@ -56,7 +56,7 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
+  height: 70px;
   z-index: 3;
   pointer-events: none;
   display: flex;
@@ -78,11 +78,14 @@ h2 {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1px;
-  padding-top: 22px;
+  padding-top: 0px;
+  margin-top: -10px;
   cursor: pointer;
 }
 .copy-button-wrapper img {
   margin-right: 10px;
+  width: 24px;
+  height: 24px;
 }
 .rec-start, .rec-end, .first-guest {
   line-height: 24px;
@@ -107,19 +110,30 @@ p.notification-msg {
 .chat-open-button{
   position: absolute;
   right: 34px;
-  bottom: 32px;
+  bottom: 10px;
   transition: opacity .2s;
   width: 2.5em;
   height: 2.5em;
   display: flex;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   text-align: center;
-  line-height: 22px;
+  line-height: 14px;
   color: #fff;
   cursor: pointer;
   transition: all .2s ease;
+  width: 72px; /* for chat icon */
+  height: 72px; /* for chat icon */
+  background: rgba(13,22,36,.5);
+  border-radius: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chat-open-button img {
+  width: 32px; /* for new chat icon */
+  height: 32px; /* for new chat icon */
 }
 .chat-open-button.visible, .notification-wrapper.visible {
   z-index: 800;
@@ -135,10 +149,11 @@ p.notification-msg {
   background: #ED3C61;
   border: 1px solid #FFFFFF;
   border-radius: 11px;
-  font-size: 14px;
+  font-size: 12px;
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: 3px;
+  left: -3px;
+  line-height: 22px;
 }
 .chat-msg-banner, .rec-disabled-msg, .notification-msg {
   font-size: 12px;
@@ -197,6 +212,10 @@ position: relative;
   align-items: center;
   flex-direction: column;
   transition: all .3s ease;
+}
+.cam-off-msg img {
+  width: 32px;
+  height: 32px;
 }
 .cam-off-msg p {
   color: #fff;
@@ -345,6 +364,7 @@ bottom: 119px;
   justify-content: flex-end;
   display: flex;
   background-color: rgba(13,22,36,.5);
+  border-radius: 36px;
   /* overflow: hidden; */
   /* border: 2px solid salmon; */
 }
@@ -352,15 +372,13 @@ bottom: 119px;
   --button-text-color: #fff;
   color: var(--button-text-color);
   position: relative;
-  text-transform: uppercase;
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  font-size: 14px;
   font-weight: 600;
-  height: 80px;
+  height: 72px;
   justify-content: center;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   text-align: center;
   min-width: 72px;
   border-radius: 0;
@@ -370,23 +388,29 @@ bottom: 119px;
   text-decoration: none;
   cursor: pointer;
   outline: none;
+  width: 86px;
 }
 .video-toolbar-item:hover {
   background: rgba(13,22,36,.7);
+  border-radius: 36px;
 }
 .video-toolbar-item.leave-button {
   background-color: rgba(199, 40, 68, .8);
+  border-radius: 36px;
 }
 .video-toolbar-item img {
   align-items: center;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  height: 24px;
+  height: 32px;
 }
 #recBtn div { /* Guest screen, and when 1 hour free recording is finished. */
   color: #fff;
   opacity: .2;
+}
+#recBtn:hover {
+  background: none;
 }
 .video-toolbar-item img.rec-btn {
   height: 54px;
@@ -409,11 +433,11 @@ bottom: 119px;
 /* End Video, Mic btn on off */
 .video-toolbar-item div {
   text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   width: 100%;
   min-width: 50px;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 .video-frame {
   position: relative;
@@ -569,11 +593,12 @@ transform: translateX(calc(-1000% - 8px));
   height: 30px;
 }
 .room-list-header button.close-button {
-  width: 22px;
-  height: 22px;
-  background: url("../images/icon/close.png") no-repeat 50% 50%;
+  width: 32px;
+  height: 32px;
+  background: url("../images/icon/leave.png") no-repeat 50% 50%;
   border: none;
   cursor: pointer;
+  background-size: contain;
 }
 .room-list-header button.close-button:focus, .room-list-item-wrapper button.video-sound:focus,.room-list-item-wrapper button.sound-off:focus, #chatArea .chat-msg-area .chat-area-header .close-button:focus  {
   outline: 0;
@@ -623,28 +648,32 @@ transform: translateX(calc(-1000% - 8px));
   width: 35px;
   height: 30px;
   background: url("../images/icon/video-on.png") no-repeat;
+  background-size: contain;
 }
 .room-list-item-wrapper div .cam-off {
   margin-right: 11px;
   width: 35px;
   height: 30px;
   background: url("../images/icon/video-off.png") no-repeat;
+  background-size: contain;
 }
 /* .room-list-item-wrapper div:hover .camera-status-icon {
   background: url("../images/icon/video-hover.png") no-repeat;
 } */
 .room-list-item-wrapper button.video-sound {
-  width: 18px;
-  height: 18px;
+  width: 32px;
+  height: 32px;
   border: none;
   background: url("../images/icon/sound-on.png") no-repeat;
   cursor: pointer;
+    background-size: contain;
 }
 .room-list-item-wrapper button.sound-off {
-  width: 18px;
-  height: 18px;
+  width: 32px;
+  height: 32px;
   border: none;
   background: url("../images/icon/sound-off.png") no-repeat;
+  background-size: contain;
 }
 /* Leave Modal */
 .leave-modal-wrap {
@@ -752,12 +781,13 @@ padding: 10px;
 // box-shadow: inset 0px 60px 50px -20px rgba(0,0,0,1); */
 }
 #chatArea .chat-area-header .close-button {
-  width: 22px;
-  height: 22px;
-  background: url("../images/icon/close.png") no-repeat 50% 50%;
+  width: 32px;
+  height: 32px;
+  background: url("../images/icon/leave.png") no-repeat 50% 50%;
   border: none;
   cursor: pointer;
   position: fixed;
+  background-size: contain;
 }
 #chatMsgType {
   width: 100%;
