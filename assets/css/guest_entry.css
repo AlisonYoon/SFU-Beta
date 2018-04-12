@@ -90,6 +90,10 @@ h2 {
 .cam-off-msg p {
   color: #fff;
 }
+.cam-off-msg img {
+  width: 32px;
+  height: 32px;
+}
 #videoFrame {
   transition: all .2s ease;
 }
@@ -106,6 +110,10 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.videoView-bottomLeftName img {
+  width: 32px;
+  height: 32px;
 }
 .videoView-bottomLeftName p, .videoView-bottomLeftName input {
   margin: 0 6px;
@@ -138,12 +146,12 @@ h2 {
 }
 .setting-tool-box div p {
   color: #fff;
-  text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 }
 .setting-tool-box div img {
-  margin-bottom: 13px;
+  width: 32px;
+  height: 32px;
 }
 .videoOff {
   display: none;
@@ -151,14 +159,7 @@ h2 {
 .micOff {
   display: none;
 }
-.mic-onoff .micOnParent {
-  width: 35px;
-  height: 35px;
-  margin-bottom: 13px;
-}
-.micOn {
-  min-height: 28px; /*preventing mic icon resizing*/
-}
+
 /*** Mic On Volumn Animation  ***/
 #rectangle {
   width: 9px;
