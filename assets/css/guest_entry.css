@@ -302,6 +302,7 @@ button.close-button {
   background: url("../images/icon/close.png") no-repeat 50% 50%;
   border: none;
   cursor: pointer;
+  background-size: contain;
 }
 button.close-button:focus {
   outline: 0;
