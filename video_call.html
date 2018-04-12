@@ -31,27 +31,33 @@
                 <button class="close-button" onclick="openAttendee()"></button>
               </header>
               <div>
-                <h1>guest list</h1>
+                <h1>Guest list</h1>
                 <ul>
                   <li class="room-list-item">
                     <article class="room-list-item-wrapper">
+
+                      <div class="text-container">
+                        <div class="host-name">
+                          <p class="attendee-name">Kylo Ren</p>
+                          <span>(host)</span>
+                        </div>
+                      </div>
+
                       <div id="videoOnOff" onclick="videoOnOff()">
                         <div class="camera-status-icon" id="cameraStatusIcon1"></div>
-                        <div class="text-container">
-                          <div class="host-name">
-                            <p class="attendee-name">Kylo Ren</p>
-                            <span>(host)</span>
-                          </div>
-                        </div>
+
                       </div>
                       <button class="video-sound" id="soundStatusIcon1" onclick="soundOnOff()"></button>
                     </article>
                   </li>
                   <li class="room-list-item">
                     <article class="room-list-item-wrapper">
+
+                      <div class="text-container"><p class="attendee-name">Ray</p></div>
+
                       <div>
                         <div class="camera-status-icon"></div>
-                        <div class="text-container"><p class="attendee-name">Ray</p></div>
+
                       </div>
                       <button class="video-sound"></button>
                     </article>

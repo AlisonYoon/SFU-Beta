@@ -109,7 +109,7 @@ p.notification-msg {
 }
 .chat-open-button{
   position: absolute;
-  right: 34px;
+  right: 24px;
   bottom: 10px;
   transition: opacity .2s;
   width: 2.5em;
@@ -123,10 +123,10 @@ p.notification-msg {
   color: #fff;
   cursor: pointer;
   transition: all .2s ease;
-  width: 72px; /* for chat icon */
-  height: 72px; /* for chat icon */
+  width: 64px; /* for chat icon */
+  height: 64px; /* for chat icon */
   background: rgba(13,22,36,.5);
-  border-radius: 36px;
+  border-radius: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,7 +364,7 @@ bottom: 119px;
   justify-content: flex-end;
   display: flex;
   background-color: rgba(13,22,36,.5);
-  border-radius: 36px;
+  border-radius: 32px;
   /* overflow: hidden; */
   /* border: 2px solid salmon; */
 }
@@ -376,7 +376,7 @@ bottom: 119px;
   display: flex;
   flex-flow: column nowrap;
   font-weight: 600;
-  height: 72px;
+  height: 64px;
   justify-content: center;
   /* padding: 0 15px; */
   text-align: center;
@@ -388,7 +388,7 @@ bottom: 119px;
   text-decoration: none;
   cursor: pointer;
   outline: none;
-  width: 86px;
+  width: 72px;
 }
 .video-toolbar-item:hover {
   background: rgba(13,22,36,.7);
@@ -403,7 +403,7 @@ bottom: 119px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  height: 32px;
+  height: 24px;
 }
 #recBtn div { /* Guest screen, and when 1 hour free recording is finished. */
   color: #fff;
@@ -566,7 +566,6 @@ transform: translateX(calc(-1000% - 8px));
   /* border: 2px solid #00ff7f; */
 }
 .room-list-content div h1 {
-  text-transform: uppercase;
   color: #fff;
   font-size: 16px;
   line-height: 22px;
@@ -577,7 +576,7 @@ transform: translateX(calc(-1000% - 8px));
 }
 .room-list-header, .chat-area-header {
   height: 10px;
-  padding: 4px 8px;
+  padding: 8px 8px;
   flex-shrink: 0;
   margin-bottom: 4px;
   display: flex;
@@ -593,8 +592,8 @@ transform: translateX(calc(-1000% - 8px));
   height: 30px;
 }
 .room-list-header button.close-button {
-  width: 32px;
-  height: 32px;
+  width: 24x;
+  height: 24px;
   background: url("../images/icon/leave.png") no-repeat 50% 50%;
   border: none;
   cursor: pointer;
@@ -631,9 +630,10 @@ transform: translateX(calc(-1000% - 8px));
   text-decoration: none;
   position: relative;
 }
-.room-list-item-wrapper div div.text-container {
-  position: absolute;
-  left: 60px;
+.room-list-item-wrapper div.text-container {
+  /* position: absolute;
+  left: 60px; */
+  font-size: 12px;
 }
 .room-list-item-wrapper div div.host-name {
   display: flex;
@@ -645,32 +645,32 @@ transform: translateX(calc(-1000% - 8px));
 }
 .room-list-item-wrapper div .camera-status-icon {
   margin-right: 11px;
-  width: 35px;
-  height: 30px;
-  background: url("../images/icon/video-on.png") no-repeat;
+  width: 24px;
+  height: 24px;
+  background: url("../images/icon/video-on.png") no-repeat 100% 100%;
   background-size: contain;
 }
 .room-list-item-wrapper div .cam-off {
   margin-right: 11px;
-  width: 35px;
-  height: 30px;
-  background: url("../images/icon/video-off.png") no-repeat;
+  width: 24px;
+  height: 24px;
+  background: url("../images/icon/video-off.png") no-repeat 100% 100%;
   background-size: contain;
 }
 /* .room-list-item-wrapper div:hover .camera-status-icon {
   background: url("../images/icon/video-hover.png") no-repeat;
 } */
 .room-list-item-wrapper button.video-sound {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   border: none;
   background: url("../images/icon/sound-on.png") no-repeat;
   cursor: pointer;
-    background-size: contain;
+  background-size: contain;
 }
 .room-list-item-wrapper button.sound-off {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   border: none;
   background: url("../images/icon/sound-off.png") no-repeat;
   background-size: contain;
@@ -781,8 +781,8 @@ padding: 10px;
 // box-shadow: inset 0px 60px 50px -20px rgba(0,0,0,1); */
 }
 #chatArea .chat-area-header .close-button {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   background: url("../images/icon/leave.png") no-repeat 50% 50%;
   border: none;
   cursor: pointer;
