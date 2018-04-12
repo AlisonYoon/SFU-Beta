@@ -473,6 +473,10 @@ bottom: 119px;
   border-radius:15px;
   background: rgba(0,0,0,.5);
 }
+.videoView-topToolbar button figure img { /* for new maximize icon */
+  width: 24px;
+  height: 24px
+}
 .videoView-topToolbar button figure div {
   background-color: rgba(0,0,0,0.7);
   height: 38px;
