@@ -24,15 +24,15 @@
       <section class="wrap">
         <div class="room-wrap">
 
-            <!-- Guest List -->
+            <!-- Invite others -->
            <div class="room-activity" id="roomActivity">
             <aside class="room-list-content">
               <header class="room-list-header">
                 <button class="close-button" onclick="openAttendee()"></button>
               </header>
-              <div>
-                <h1>Guest list</h1>
-                <ul>
+              <div class="invite-area">
+                <!--<h1></h1>
+                 <ul>
                   <li class="room-list-item">
                     <article class="room-list-item-wrapper">
 
@@ -62,11 +62,41 @@
                       <button class="video-sound"></button>
                     </article>
                   </li>
+                </ul> -->
+
+                <!-- Invite via email -->
+                <ul>
+                  <li><h2>Invite via email</h2> </li>
+                  <li><input class="email-invite-input" type="text" placeholder="guest-name@mail.com">
+                  <p>Add many emails separate by comma (,)</p>
+                  </li>
+                  <li>
+                    <div class="invite-btn block">
+                        <button class="new-button">Send invitation</button>
+                    </div>
+                  </li>
                 </ul>
+
+                <!-- Separator  -->
+                <div class="invite-seperator"></div>
+
+                <!-- Invite via link -->
+                <ul>
+                  <li><h2>Invite via link</h2> </li>
+                  <li><input class="link-invite-input" type="text" value="https://roundee.io/meeting..">
+                  <p>Copy and paste in chat or email</p>
+                  </li>
+                  <li>
+                    <div class="invite-btn block">
+                        <button class="new-button" id="inviteLink" onclick="inviteViaLink()">Copy link</button>
+                    </div>
+                  </li>
+                </ul>
+
               </div>
             </aside>
             <div class="max-guest-number">
-              <p>Maximum 6 guests.</p>
+              <p>Maximum 6 members.</p>
             </div>
           </div>
           <!-- End Guest List -->
@@ -360,7 +390,7 @@
             <div id="videoToolbarFixed" class="video-toolbar-fixed">
               <div class="video-toolbar">
                 <div class="meeting-ctrl">
-                  <button class="video-toolbar-item" id="roomActivity" onclick="openAttendee()"><img src="assets/images/icon/guest.png" alt=""><div>Guest</div></button>
+                  <button class="video-toolbar-item" id="roomActivity" onclick="openAttendee()"><img src="assets/images/icon/invite.png" alt=""><div>Invite</div></button>
                   <!-- Video, Mic on off  -->
                   <button class="video-toolbar-item" onclick="toolVideoOnOff()"><img src="assets/images/icon/video-on.png" alt="" class="video-btn videoOn"><img src="assets/images/icon/video-off.png" alt="" class="video-btn-off videoOff"><div>Video on</div></button> <!-- Class added for video off -->
                   <button class="video-toolbar-item" onclick="toolMicOnOff()"><img src="assets/images/icon/mic-on.png" alt="" class="mic-btn"><img src="assets/images/icon/mic-off.png" alt="" class="mic-btn-off"><div>Mic on</div></button>
@@ -385,7 +415,7 @@
           <!-- End Notification -->
           <div class="chat-open-button visible" onclick="chatAreaOpen()">
             <img src="assets/images/icon/chat.png" alt="">
-            <span class="chat-msg-badge">99</span>
+            <span class="chat-msg-badge">5</span>
             <p class="chat-msg-banner">Francois: This is a very short message...</p>
             Chat
           </div>

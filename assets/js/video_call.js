@@ -194,6 +194,11 @@ const copyLinkClick = () => {
   $('.copy-link-msg').text("Copied!");
 }
 
+// Invite Airea Copy link click
+const inviteViaLink = () => {
+  $('#inviteLink').text("Link copied!");
+}
+
 // Notification banner show hide
 const notificationBanner = () => {
   $('.notification-wrapper').toggleClass('visible');
