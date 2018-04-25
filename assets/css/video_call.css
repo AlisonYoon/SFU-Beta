@@ -1056,7 +1056,8 @@ button.new-button:hover:after {
 .invite-area ul li p {
   color: #fff;
   font-size: 12px;
-  line-height: 28px;
+  line-height: 14px;
+  margin-top: 12px;
 }
 .invite-area ul li .invite-btn {
   position: relative;
