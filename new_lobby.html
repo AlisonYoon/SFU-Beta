@@ -16,7 +16,7 @@
 
 
         <!-- Sign Up page css  -->
-        <link rel="stylesheet" href="assets/css/video_call.css">
+        <link rel="stylesheet" href="assets/css/new_lobby.css">
 
 
     </head>
@@ -31,40 +31,6 @@
                 <button class="close-button" onclick="openAttendee()"></button>
               </header>
               <div class="invite-area">
-                <!--<h1></h1>
-                 <ul>
-                  <li class="room-list-item">
-                    <article class="room-list-item-wrapper">
-
-                      <div class="text-container">
-                        <div class="host-name">
-                          <p class="attendee-name">Kylo Ren</p>
-                          <span>(host)</span>
-                        </div>
-                      </div>
-
-                      <div id="videoOnOff" onclick="videoOnOff()">
-                        <div class="camera-status-icon" id="cameraStatusIcon1"></div>
-
-                      </div>
-                      <button class="video-sound" id="soundStatusIcon1" onclick="soundOnOff()"></button>
-                    </article>
-                  </li>
-                  <li class="room-list-item">
-                    <article class="room-list-item-wrapper">
-
-                      <div class="text-container"><p class="attendee-name">Ray</p></div>
-
-                      <div>
-                        <div class="camera-status-icon"></div>
-
-                      </div>
-                      <button class="video-sound"></button>
-                    </article>
-                  </li>
-                </ul> -->
-
-                <!-- Invite via email -->
                 <ul>
                   <li><h2>Invite via email</h2> </li>
                   <li><input class="email-invite-input" type="text" placeholder="guest-name@mail.com">
@@ -96,7 +62,7 @@
               </div>
             </aside>
             <div class="max-guest-number">
-              <p>Maximum 6 members.</p>
+              <p><span>5</span> member<span>s</span> can join</p>
             </div>
           </div>
           <!-- End Guest List -->
@@ -104,55 +70,54 @@
 
           <div class="video-view">
 
+            <!-- New Lobby Modal -->
+            <div class="lobby-modal-wrap" id="lobbyModal">
 
-            <!-- <div class="video-space-header">
-              <div class="room-url-wrapper">
-                <div class="copy-button-wrapper">
-                  <img src="assets/images/icon/link.png" alt="">
-                  Copy link
-                </div>
-              </div>
-            </div> -->
-            <!-- Video Room Header End -->
-            <!-- <div class="room-activity" id="roomActivity">
-              <aside class="room-list-content">
-                <header class="room-list-header">
-                  <button class="close-button" onclick="openAttendee()"></button>
-                </header>
-                <div>
-                  <h1>guest list</h1>
+                <h1>Audio & Video testing</h1>
+
+              <div class="settings-check">
+                <div class="user-video"></div>
+                <div class="settings-control">
                   <ul>
-                    <li class="room-list-item">
-                      <article class="room-list-item-wrapper">
-                        <div id="videoOnOff" onclick="videoOnOff()">
-                          <div class="camera-status-icon" id="cameraStatusIcon1"></div>
-                          <div class="text-container">
-                            <div class="host-name">
-                              <p class="attendee-name">Kylo Ren</p>
-                              <span>(host)</span>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="video-sound" id="soundStatusIcon1" onclick="soundOnOff()"></button>
-                      </article>
+                    <li>
+                      <h2>Camera</h2>
+                      <select name="" id="">
+                        <option value="Camera 1">camera 1</option>
+                        <option value="Camera 2">camera 2</option>
+                      </select>
                     </li>
-                    <li class="room-list-item">
-                      <article class="room-list-item-wrapper">
-                        <div>
-                          <div class="camera-status-icon"></div>
-                          <div class="text-container"><p class="attendee-name">Ray</p></div>
-                        </div>
-                        <button class="video-sound"></button>
-                      </article>
+                    <li>
+                      <h2>Microphone</h2>
+                      <select name="" id="">
+                        <option value="Mic 1">mic 1</option>
+                        <option value="Mic 2">mic 2</option>
+                      </select>
+                    </li>
+                    <li>
+                      <h2>Video quality</h2>
+                      <select name="" id="">
+                        <option value="High">High</option>
+                        <option value="Low">Low</option>
+                      </select>
                     </li>
                   </ul>
                 </div>
-              </aside>
-              <div class="max-guest-number">
-                <p>Maximum 6 guests.</p>
+
               </div>
-            </div> -->
-            <!-- Attendee List End  -->
+
+              <div class="lobby-control">
+                <button><img src="assets/images/icon/video-on.png" alt="video on"><img src="assets/images/icon/video-off.png" alt="video off" class="none"><div>Video on</div></button>
+                <button><img src="assets/images/icon/mic-on.png" alt="mic on"><img src="assets/images/icon/mic-off.png" alt="mic off" class="none"><div>Mic on</div></button>
+              </div>
+
+
+              <div class="enter-meeting-btn block">
+                  <button class="new-button" id="inviteLink" onclick="inviteViaLink()">Enter meeting</button>
+              </div>
+
+            </div>
+            <!-- End New Lobby Modal -->
+
             <!-- Leave Message Modal -->
             <div class="leave-modal-wrap" id="leave-msg">
              <figure class="leave-modal">
@@ -370,17 +335,7 @@
             <!-- End Setting Box  -->
 
             </div>
-            <!-- Video Screen Area End -->
-            <!-- <div class="video-space-header">
-              <div class="room-url-wrapper">
-                <div class="copy-button-wrapper" onclick="copyLinkClick()">
-                  <img src="assets/images/icon/link.png" alt="">
-                  <p class="copy-link-msg">Copy link</p>
-                </div>
 
-              </div>
-            </div> -->
-            <!-- End Video Space Header -->
             <div id="videoToolbarFixed" class="video-toolbar-fixed">
               <div class="video-toolbar">
                 <div class="meeting-ctrl">
@@ -391,7 +346,7 @@
                   <!-- End Video, Mic on off  -->
 
                   <button class="video-toolbar-item" id="recBtn" onclick="recOnOff()"><img src="assets/images/icon/recording-off.png" alt="" class="rec-btn"><img src="assets/images/icon/recording-on.png" alt="" class="rec-btn-on"><div>Rec</div>
-                      <p class="rec-disabled-msg">Recording is available only for host.</p>
+                      <p class="rec-disabled-msg none">Recording is available only for host.</p>
                   </button>
                   <button class="video-toolbar-item"><img src="assets/images/icon/present.png" alt=""><div>Present</div></button>
                   <button class="video-toolbar-item" onclick="settingsBox1()"><img src="assets/images/icon/settings.png" alt=""><div>Settings</div></button>
@@ -403,14 +358,14 @@
           </div>
           <!-- Video View End -->
           <!-- Notification -->
-          <div class="notification-wrapper visible">
+          <div class="notification-wrapper none">
             <p class="notification-msg"><img src="assets/images/icon/signal-bar.png" alt=""> Poor network. Turn off video to improve call quality.</p>
           </div>
           <!-- End Notification -->
           <div class="chat-open-button visible" onclick="chatAreaOpen()">
             <img src="assets/images/icon/chat.png" alt="">
             <span class="chat-msg-badge">5</span>
-            <p class="chat-msg-banner">Francois: This is a very short message...</p>
+            <p class="chat-msg-banner none">Francois: This is a very short message...</p>
             Chat
           </div>
           <!-- Chat Button End -->
