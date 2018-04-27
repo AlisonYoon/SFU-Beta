@@ -76,7 +76,12 @@
                 <h1>Audio & Video testing</h1>
 
               <div class="settings-check">
-                <div class="user-video"></div>
+                <div class="user-video">
+                  <div class="videoView-bottomLeftName">
+                    <input id="myName" value="Guest(edit)" onclick="nameEdit()">
+                    <!-- This is "my" name. One can change only self's name -->
+                  </div>
+                </div>
                 <div class="settings-control">
                   <ul>
                     <li>
@@ -106,8 +111,8 @@
               </div>
 
               <div class="lobby-control">
-                <button><img src="assets/images/icon/video-on.png" alt="video on"><img src="assets/images/icon/video-off.png" alt="video off" class="none"><div>Video on</div></button>
-                <button><img src="assets/images/icon/mic-on.png" alt="mic on"><img src="assets/images/icon/mic-off.png" alt="mic off" class="none"><div>Mic on</div></button>
+                <button onclick="lobbyVideoOnOff()"><img src="assets/images/icon/video-on.png" alt="video on" class="lobby-video-btn"><img src="assets/images/icon/video-off.png" alt="video off" class="none"><div>Video on</div></button>
+                <button><img src="assets/images/icon/mic-on.png" alt="mic on" class="lobby-mic-btn"><img src="assets/images/icon/mic-off.png" alt="mic off" class="none"><div>Mic on</div></button>
               </div>
 
 

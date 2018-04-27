@@ -223,3 +223,26 @@ function settingsBox1() {
     //$('.settings-box').css('display','none');
   };
 };
+
+// New Lobby Video controls
+function lobbyVideoOnOff() {
+  console.log('clock');
+  // if ($('.lobby-video-btn').css('display')=='none') {
+  //   $('.lobby-video-btn-off').hide();
+  //   $('.lobby-video-btn').show();
+  //   $('.user-video').css({"background-color":"transparent",
+  //   '-webkit-box-shadow': 'none',
+  // '-moz-box-shadow': 'none',
+  // 'box-shadow': 'none'
+  // });
+  //   $('.cam-off-msg').hide();
+  // } else if ($('.lobby-video-btn').css('display')=='block') {
+  //   $('.video-btn-off').show();
+  //   $('.video-btn').hide();
+  //   $('.cam-off-msg').fadeTo('fast',1.00);
+  //   $('#videoFrame').css({"background-color":"rgba(0,0,0,.5)",
+  //   '-webkit-box-shadow': 'inset 0px 0px 153px 34px rgba(0,0,0,0.8)',
+  // '-moz-box-shadow': 'inset 0px 0px 153px 34px rgba(0,0,0,0.8)',
+  // 'box-shadow': 'inset 0px 0px 153px 34px rgba(0,0,0,0.8)'});
+  // };
+}
