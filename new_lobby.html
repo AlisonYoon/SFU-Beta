@@ -77,6 +77,10 @@
 
               <div class="settings-check">
                 <div class="user-video">
+                  <div class="cam-off-msg">
+                    <img src="assets/images/guestentry/video-off.png" alt="">
+                    <p>Video off</p>
+                  </div>
                   <div class="videoView-bottomLeftName">
                     <input id="myName" value="Guest(edit)" onclick="nameEdit()">
                     <!-- This is "my" name. One can change only self's name -->
@@ -111,8 +115,10 @@
               </div>
 
               <div class="lobby-control">
-                <button onclick="lobbyVideoOnOff()"><img src="assets/images/icon/video-on.png" alt="video on" class="lobby-video-btn"><img src="assets/images/icon/video-off.png" alt="video off" class="none"><div>Video on</div></button>
-                <button><img src="assets/images/icon/mic-on.png" alt="mic on" class="lobby-mic-btn"><img src="assets/images/icon/mic-off.png" alt="mic off" class="none"><div>Mic on</div></button>
+                <!-- <button onclick="lobbyVideoOnOff()"><img src="assets/images/icon/video-on.png" alt="video on" class="lobby-video-btn"><img src="assets/images/icon/video-off.png" alt="video off" class="none"><div>Video on</div></button>
+                <button><img src="assets/images/icon/mic-on.png" alt="mic on" class="lobby-mic-btn"><img src="assets/images/icon/mic-off.png" alt="mic off" class="none"><div>Mic on</div></button> -->
+                <button class="video-toolbar-item" onclick="toolVideoOnOff()"><img src="assets/images/icon/video-on.png" alt="" class="video-btn videoOn"><img src="assets/images/icon/video-off.png" alt="" class="video-btn-off videoOff"><div>Video on</div></button>
+                <button class="video-toolbar-item" onclick="toolMicOnOff()"><img src="assets/images/icon/mic-on.png" alt="" class="mic-btn"><img src="assets/images/icon/mic-off.png" alt="" class="mic-btn-off"><div>Mic on</div></button>
               </div>
 
 

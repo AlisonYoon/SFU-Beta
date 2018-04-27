@@ -1124,7 +1124,8 @@ button.new-button:hover:after {
 .lobby-control {
   width: 100%;
   text-align: center;
-
+  display: flex;
+  justify-content: center;
 }
 .lobby-control button {
   width: 80px;
