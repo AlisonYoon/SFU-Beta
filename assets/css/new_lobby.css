@@ -1161,3 +1161,11 @@ button.new-button:hover:after {
   background-repeat: no-repeat;
   padding-left:24px;
 }
+.voice-detector {
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+}
+.voice-detector img{
+  width: 19px;
+}
