@@ -93,8 +93,8 @@ h2 {
 .notification-wrapper {
   position: absolute;
   color: #fff;
-  right: 300px;
-  top: 50px;
+  right: 50%;
+  top: 50%;
   /* overflow: hidden; */
 }
 .notification-wrapper img {
