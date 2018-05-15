@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Typography */
+
+body, .base {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.type-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 45px;
+}
+
+.class-label {
+  display: inline-block;
+  padding: 3px 5px;
+  margin-right: 10px;
+  border: 1px solid #ABBACD;
+  background: #DEE4EC;
+  border-radius: 2px;
+}
+
+.h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.778rem;
+  line-height: 3.444rem;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+}
+
+.h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  line-height: 2.667rem;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+}
+
+.h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.778rem;
+  line-height: 2.222rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.444rem;
+  line-height: 1.778rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.h5 {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', sans-serif;
+  font-size: 1.222rem;
+  line-height: 1.667rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.h6 {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', sans-serif;
+  font-size: 1.111rem;
+  line-height: 1.556rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.base-s {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', sans-serif;
+  font-size: 0.889rem;
+  line-height: 1.222rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.base-xs {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', sans-serif;
+  font-size: 0.667rem;
+  line-height: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.base-mobile {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', sans-serif;
+  font-size: 0.556rem;
+  line-height: 0.556rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+/* Color */
+
+.color-row {
+  display: flex;
+}
+
+.color-swatch {
+  width: 200px;
+  height: 200px;
+}
+
+.gradient-swatch {
+  width: 200px;
+  height: 300px;
+}
+
+.color-swatch-header {
+  width: 100%;
+  height: 70%;
+}
+
+.gradient-swatch-header {
+  width: 100%;
+  height: 50%;
+}
+
+.color-swatch-body {
+  width: 100%;
+  height: 30%;
+  background: #FBFBFB;
+}
+
+.gradient-swatch-body {
+  width: 100%;
+  height: 50%;
+  background: #FBFBFB;
+}
+
+.color-background {
+  width: 100%;
+  height: 100%;
+}
+
+.color-information {
+  display: flex;
+  justify-content: space-around;
+}
+
+.color-name span, .color-hex span, .color-rgb span {
+  font-size: 12px;
+  color: #825F53;
+}
+
+.color-name p, .color-hex p, .color-rgb p {
+  font-size: 12px;
+}
+
+.gradient-background {
+  background: rgb(24, 53, 229);
+  background: linear-gradient(90deg, rgba(24, 53, 229, 1) 0%, rgba(104, 212, 189, 1) 100%);
+}
+
+/* Iconography */
+
+.icon-size-guide {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-around;
+  align-items: flex-end;
+  li figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    figurecaption {
+      color: #57595C;
+      margin-top: 5px;
+      span {
+        display: block;
+        padding: 3px 5px;
+        margin-right: 10px;
+        border: 1px solid #ABBACD;
+        background: #DEE4EC;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+.icon-guides {
+  width: 200px;
+  display: block;
+}
+
+.icon-set {
+  width: 800px;
+}
+
+.icon-xs {
+  width: 16px;
+}
+
+.icon-s {
+  width: 20px;
+}
+
+.icon-r {
+  width: 24px;
+}
+
+.icon-l {
+  width: 32px;
+}
+
+.icon-xl {
+  width: 48px;
+}
+
+/* Badge */
+
+.badge {
+  display: inline-block;
+  color: #fff;
+  background: #C72844;
+  padding: 1px 8px;
+  border-radius: 10px;
+}
+
+/* Button */
+
+.btn-box {
+  width: 100%;
+  height: 110px;
+  position: relative;
+}
+
+.btn-p400 {
+  background: #C72844;
+  color: #fff;
+  padding: 15px 50px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 25px;
+  font-family: 'Open-sans', sans-serif;
+  -webkit-transition: .3s;
+  transition: .3s;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateX(0) translateY(-50%);
+  transform: translateX(0) translateY(-50%);
+}
+
+.btn-g400 {
+  background: #C72844;
+  color: #fff;
+  padding: 15px 50px;
+  border: 0;
+  font-size: 18px;
+  border-radius: 25px;
+  font-family: 'Open-sans', sans-serif;
+  -webkit-transition: .3s;
+  transition: .3s;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateX(0) translateY(-50%);
+  transform: translateX(0) translateY(-50%);
+  background: #04AC92;
+}
+
+.btn-p400:focus, .btn-g400:focus {
+  outline: 0;
+}
+
+.btn-p400:before, .btn-g400:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .5;
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+  -webkit-transform: translateX(-100px) skewX(-15deg);
+  transform: translateX(-100px) skewX(-15deg);
+}
+
+.btn-p400:after, .btn-g400:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-transform: translateX(-100px) skewX(-15deg);
+  transform: translateX(-100px) skewX(-15deg);
+}
+
+.btn-p400:hover {
+  background: #E8657C;
+  cursor: pointer;
+}
+
+.btn-g400:hover {
+  background: #2AD7BC;
+  cursor: pointer;
+}
+
+.btn-p400:hover:before, .btn-g400:hover:before {
+  -webkit-transform: translateX(300px) skewX(-15deg);
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.btn-p400:hover:after, .btn-g400:hover:after {
+  -webkit-transform: translateX(300px) skewX(-15deg);
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  -webkit-transition: .7s;
+  transition: .7s;
+}

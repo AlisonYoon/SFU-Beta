@@ -716,7 +716,8 @@ transform: translateX(calc(-1000% - 8px));
 }
 
 .leave-modal-content {
-  background: #fff;
+  background: #272C33;
+  color: #fff;
   padding: 40px;
   border-radius: 2px;
   position: relative;
@@ -761,6 +762,12 @@ transform: translateX(calc(-1000% - 8px));
 .leave-modal-content .join-call {
   top: 0;
 }
+
+.record-guide {
+  position: absolute;
+  bottom: 0;
+  background: 
+}
 /* End Leave Modal */
 /* Common Classes */
 .block {
@@ -769,6 +776,7 @@ transform: translateX(calc(-1000% - 8px));
 .none {
   display: none;
 }
+
 /* End Common Classes */
 
 /* Chat Area CSS */

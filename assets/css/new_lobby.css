@@ -299,11 +299,10 @@ a.button2:hover::before, .join-call a:hover::before {
   width: 327px;
   left: 0;
 }
-.save-btn {
+.btn-box {
   width: 100%;
   height: 110px;
   position: relative;
-  /* border: 2px solid #eeee00; */
 }
 /* End Host Entered Alone Copy link button */
 .video-box.fullscreen {
@@ -956,8 +955,7 @@ button.new-button {
 button.new-button {
   background: #C72844;
   color: #fff;
-  width: 200px;
-  height: 50px;
+  padding: 15px 50px;
   border: 0;
   font-size: 18px;
   border-radius: 25px;
