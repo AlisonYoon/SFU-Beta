@@ -31,10 +31,35 @@
       <section class="content">
         <div class="left-video">
           <div class="video-player">
-            <video width="700" controls src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+            <video width="700" src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
               poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
-              width="620">
-              <!-- End video record -->
+              width="620"></video>
+              <!-- End recorded video -->
+              <div id="recfile_progress" class="timeline">
+                <span id="progresspoint" class="icon-current"></span>
+                <span id="progress_bar" class="progress-bar"></span>
+            </div>
+            <!-- End video progress bar -->
+              <div id="recfile_controller" class="controlbar">
+                <div class="inner clearfix">
+                    <span class="time">{{currentTime}}/{{durationTime}}</span>
+
+                    <button id="btnPlay" type="button" class="play" {{action "recFilePlayNPause"}}></button>
+                    <button type="button" class="forword" {{action "playForward"}}></button>
+                    <div class="r-btn">
+                        <button id="btnRecFileVolume" type="button" class="volume" {{action "showVolumeControl"}}></button>
+                        <button type="button" class="fullscreen" {{action "videoFullScreen"}}></button>
+                    </div>
+
+                    <div class="volume-control">
+                        <div class="volume-control-inner">
+                            <input id="recvolume" type="range" class="range vertical-lowest-first" min="0" max="100" value="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- End video control -->
+              <button class="base-s"><img src="assets/images/icon/link.png" alt="link"> Copy link</button>
             <div class="video-ctrl"></div>
           </div>
           <!-- End video-player -->
@@ -43,12 +68,6 @@
             <p class="base-s">Published <span>May 15 2018, 10:30 am EST</span></p>
           </div>
           <!-- End video-title -->
-          <div class="video-share">
-            <span><img src="assets/images/result/share.png" alt="share video">Share meeting</p>
-            <button id="videoDownload" class="btn-g400">download</button>
-          </div>
-          <!-- End video-share -->
-
         </div>
         <!-- End left side video -->
 

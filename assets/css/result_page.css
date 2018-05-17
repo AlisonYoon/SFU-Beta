@@ -9,6 +9,25 @@
   width: 187px;
 }
 
+/*** Page expired ***/
+.expired-msg {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exp-msg {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+.exp-msg button.btn-g400 {
+  left: 50%;
+  margin-left: -110px;
+}
  /*** Content ***/
  .content {
    display: flex;
@@ -21,6 +40,29 @@
   width: 700px;
   display: inline-block;
   border: 1px solid #f1c6d8;
+}
+.video-player {
+  background: #000;
+  position: relative;
+}
+.video-player video {
+  margin-top: 24px;
+}
+.video-player button {
+  background: none;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+  outline: none;
+}
+.video-player button img {
+  width: 20px;
+  margin-right: 10px;
 }
 .video-share {
   position: relative;
@@ -45,3 +87,710 @@
   display: inline-block;
   overflow-y: scroll;
 }
+
+
+/***** For custom video control, from previous scss file *****/
+
+ /* .video-wrap {
+  width: 100%;
+}
+ .video-wrap h2 {
+  padding-left: 30px !important;
+}
+ .video-wrap .video-inner {
+  padding-top: 15px;
+}
+ .video-wrap .video-inner .video-cover {
+  position: relative;
+  margin: 0 auto;
+} */
+ video {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 5px;
+}
+ .timeline {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 39px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: white;
+}
+ .timeline .icon-current {
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 8.82px;
+  height: 8.82px;
+  background-color: red;
+  border-radius: 10px;
+  z-index: 3;
+}
+ .timeline .icon-current.move {
+  background-color: #2866db;
+}
+ .timeline .point {
+  position: absolute;
+  width: 7px;
+  height: 5px;
+  background-color: #a3a3a3;
+}
+ .timeline .point.p1 {
+  left: 30%;
+}
+ .timeline .point.p2 {
+  left: 60%;
+}
+ .timeline .point.p3 {
+  left: 90%;
+}
+ .timeline .progress-bar {
+  float: left;
+  width: 0%;
+  height: 100%;
+  display: inline-block;
+  background-color: red;
+}
+ .timeline.show {
+  display: inline-block;
+}
+ .timeline:hover {
+  cursor: pointer;
+}
+ .timeline:hover .icon-current {
+  display: inline-block;
+}
+ .controlbar {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 34px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.76);
+  text-align: left;
+}
+ .controlbar .inner {
+  padding-top: 4px;
+}
+ .controlbar.lg .time {
+  padding-left: 14.8px;
+  width: 149px;
+}
+ .controlbar.lg .play {
+  margin-right: 19px;
+}
+ .controlbar.lg .forword {
+  margin-right: 19px;
+}
+ .controlbar.lg .r-btn {
+  margin-right: 10px;
+}
+ .controlbar.lg .r-btn .bookmark {
+  margin-right: 19px;
+}
+ .controlbar.lg .r-btn .volume {
+  margin-right: 19px;
+}
+ .controlbar.lg .zoom-control {
+  left: 268px;
+  width: 62px;
+}
+ .controlbar.lg .volume-control {
+  right: 38px;
+}
+ .controlbar.lg .volume-control input[type=range] {
+  left: -27px;
+}
+ .controlbar.md .time {
+  padding-left: 10px;
+  width: 104px;
+}
+ .controlbar.md .rewind {
+  margin-right: 17px;
+}
+ .controlbar.md .play {
+  margin-right: 17px;
+}
+ .controlbar.md .forword {
+  margin-right: 17px;
+}
+ .controlbar.md .r-btn .bookmark {
+  margin-right: 8px;
+}
+ .controlbar.md .r-btn .volume {
+  margin-right: 8px;
+}
+ .controlbar.md .zoom-control {
+  left: 220px;
+  width: 55px;
+}
+ .controlbar.md .zoom-control span {
+  padding-left: 16px;
+  font-size: 12px;
+}
+ .controlbar.md .zoom-control span.active:before {
+  left: 5px;
+}
+ .controlbar.md .volume-control {
+  right: 20px;
+  width: 31px;
+}
+ .controlbar.md .volume-control input[type=range] {
+  left: -30px;
+}
+ .controlbar.sm .time {
+  width: 78px;
+  padding-left: 5px;
+}
+ .controlbar.sm .rewind {
+  margin-right: 10px;
+}
+ .controlbar.sm .play {
+  margin-right: 10px;
+}
+ .controlbar.sm .forword {
+  margin-right: 10px;
+}
+ .controlbar.sm .r-btn {
+  margin-right: 5px;
+}
+ .controlbar.sm .r-btn .bookmark {
+  margin-right: 8px;
+}
+ .controlbar.sm .r-btn .volume {
+  margin-right: 8px;
+}
+ .controlbar.sm .zoom-control {
+  left: 180px;
+  width: 50px;
+}
+ .controlbar.sm .zoom-control span {
+  padding-left: 16px;
+  font-size: 11px;
+}
+ .controlbar.sm .zoom-control span.active:before {
+  left: 5px;
+}
+ .controlbar.sm .volume-control {
+  right: 26px;
+  width: 29px;
+}
+ .controlbar.sm .volume-control input[type=range] {
+  left: -31px;
+}
+ .controlbar .time {
+  float: left;
+  margin-top: 8px;
+  font-family: Montserrat;
+  font-size: 9px;
+  line-height: 11px;
+  color: #fff;
+}
+ .controlbar .play {
+  float: left;
+  height: 30.23px;
+  width: 32.36px;
+  background: url('../images/video/play.png') 0 0 no-repeat;
+}
+ .controlbar .play.pause {
+  background: url('../images/video/pause.png') 0 0 no-repeat;
+}
+ .controlbar .play.rewind {
+  background: url('../images/video/rewind.png') 0 0 no-repeat;
+}
+ .controlbar .forword {
+  float: left;
+  position: relative;
+  height: 30.23px;
+  width: 24.27px;
+  background: url('../images/video/forward.png') 0 0 no-repeat;
+}
+ .controlbar .forword:before {
+  position: absolute;
+  top: 15px;
+  left: -5px;
+  content: '15"';
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 9px;
+  line-height: 11px;
+  height: 30.23px;
+  width: 32.36px;
+}
+ .controlbar .zoom {
+  float: left;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 10px;
+  line-height: 13px;
+  margin-top: 8px;
+}
+ .controlbar .r-btn {
+  float: right;
+  padding-top: 7px;
+  height: 16px;
+  z-index: 2;
+}
+ .controlbar .r-btn .bookmark {
+  float: left;
+  width: 12px;
+  height: 16px;
+}
+ .controlbar .r-btn .bookmark:before {
+  width: 12px;
+  height: 16px;
+  background: url('../images/video/icon-bookmark.png') 0 0 no-repeat;
+}
+ .controlbar .r-btn .volume {
+  float: left;
+  width: 17px;
+  height: 16px;
+}
+ .controlbar .r-btn .volume:before {
+  width: 17px;
+  height: 16px;
+  background: url('../images/video/icon-volume.png') 0 0 no-repeat;
+}
+ .controlbar .r-btn .volume.mute {
+  background: url('../images/video/video_volumn_mute.png') 0 0 no-repeat;
+}
+ .controlbar .r-btn .fullscreen {
+  float: left;
+  width: 17px;
+  height: 16px;
+}
+ .controlbar .r-btn .fullscreen:before {
+  width: 17px;
+  height: 16px;
+  background: url('../images/video/icon-fullscreen.png') 0 0 no-repeat;
+}
+ .controlbar .zoom-control {
+  display: block;
+  position: absolute;
+  top: -154px;
+  height: 154px;
+  background-color: #2a2a2a;
+  z-index: 1;
+}
+ .controlbar .zoom-control span {
+  position: relative;
+  display: block;
+  padding-left: 23px;
+  height: 25px;
+  line-height: 23px;
+  margin-bottom: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+ .controlbar .zoom-control span:first-child {
+  margin-top: 5px;
+}
+ .controlbar .zoom-control span:hover,  .controlbar .zoom-control span:active {
+  background-color: #868686;
+}
+ .controlbar .zoom-control span.active:before {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -3.5px;
+  width: 7px;
+  height: 7px;
+  background: url('../images/video/icon-zoom.png');
+}
+ .controlbar .zoom-control.show {
+  display: block;
+}
+ .controlbar .volume-control {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: -108px;
+  height: 108px;
+  width: 37px;
+  background-color: #2a2a2a;
+}
+ .controlbar .volume-control .volume-control-inner {
+  position: relative;
+  padding: 8px 0;
+  height: 100%;
+}
+ .controlbar .volume-control.show {
+  display: block;
+}
+ .controlbar.show {
+  display: inline-block;
+}
+ .video-cover:hover .timeline {
+  display: inline-block;
+}
+ .video-cover:hover .controlbar {
+  display: inline-block;
+}
+ .bookmark-wrap {
+  position: relative;
+  padding: 60px 22px 60px 22px;
+}
+ .bookmark-wrap .bookmark-inner {
+  height: 100%;
+}
+ .bookmark-wrap .title,  .bookmark-wrap .label-wrap {
+  display: inline-block;
+  width: 65.6%;
+}
+ .bookmark-wrap .title {
+  position: absolute;
+  top: 30px;
+  color: #453e3e;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 17px;
+  text-align: left;
+}
+ .bookmark-wrap .label-wrap .label {
+  position: relative;
+  width: 100%;
+  height: 34px;
+  padding-right: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+ .bookmark-wrap .label-wrap .label.selected .icon-delete-bookmark {
+  display: block;
+}
+ .bookmark-wrap .label-wrap .label.selected .label-inner {
+  background-color: #81e0c7;
+}
+ .bookmark-wrap .label-wrap .label.selected .label-inner input {
+  background-color: #82cfe0;
+}
+ .bookmark-wrap .label-wrap .label .icon-delete-bookmark {
+  display: none;
+  position: absolute;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+}
+ .bookmark-wrap .label-wrap .label .icon-delete-bookmark:before {
+  width: 15px;
+  height: 15px;
+  background: url('../images/video/icon-delete-bookmark.png') 0 0 no-repeat;
+}
+ .bookmark-wrap .label-wrap .label .label-inner {
+  width: 210px;
+  height: 24px;
+  border-radius: 24px;
+  background-color: #a0a0a0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  text-align: left;
+}
+ .bookmark-wrap .label-wrap .label .label-inner i {
+  padding: 0 16px 0 20px;
+  margin-right: 8px;
+  line-height: 22px;
+  font-family: 'Montserrat';
+  border-right: 1px dashed rgba(255, 255, 255, .5);
+}
+ .bookmark-wrap .label-wrap .label .label-inner input {
+  width: -moz-calc(100% - 105px);
+  width: -webkit-calc(100% - 105px);
+  width: calc(100% - 105px);
+  line-height: 22px;
+  font-family: 'Montserrat';
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #fff;
+  background-color: #a0a0a0;
+}
+ .bookmark-wrap .label-wrap .label .label-inner:hover,  .bookmark-wrap .label-wrap .label .label-inner:active,  .bookmark-wrap .label-wrap .label .label-inner:focus {
+  cursor: pointer;
+  background-color: #81e0c7;
+}
+ .bookmark-wrap .label-wrap .label .label-inner:hover input,  .bookmark-wrap .label-wrap .label .label-inner:active input,  .bookmark-wrap .label-wrap .label .label-inner:focus input {
+  background-color: #81e0c7;
+}
+ .bookmark-wrap .add-bookmark {
+  position: absolute;
+  top: 25px;
+  left: 120px;
+  text-align: left;
+}
+ .bookmark-wrap .add-bookmark .icon-plus {
+  height: 24px;
+  width: 24px;
+}
+ .bookmark-wrap .add-bookmark .icon-plus:before {
+  height: 24px;
+  width: 24px;
+  background: url('../images/video/icon-plus.png') 0 0 no-repeat;
+}
+ .bookmark-wrap .add-bookmark .icon-plus:hover {
+  cursor: pointer;
+}
+ .bookmark-wrap .add-bookmark label {
+  padding-left: 10px;
+  color: #86898d;
+  font-family: 'Open Sans';
+  font-size: 10px;
+  line-height: 14px;
+}
+/** range **/
+.vertical-lowest-first {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+input[type=range] {
+  position: absolute;
+  top: 51px;
+  z-index: 3;
+  /*removes default webkit styles*/
+  -webkit-appearance: none;
+  /*fix for FF unable to apply focus style bug */
+  border: none;
+  /*required for proper track sizing in FF*/
+  width: 92px;
+}
+@-moz-document url-prefix() {
+  input[type=range] {
+    top: 47px;
+  }
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 92px;
+  height: 5px;
+  background: #fff;
+  border: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: #7cc5d8;
+  margin-top: -6px;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #fff;
+}
+input[type=range]::-moz-range-track {
+  width: 92px;
+  height: 5px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+}
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: #7cc5d8;
+}
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring {
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+}
+input[type=range]::-ms-track {
+  width: 92px;
+  height: 5px;
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+  /*remove default tick marks*/
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #fff;
+  border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+  background: #fff;
+  border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: #7cc5d8;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #fff;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #fff;
+}
+@media screen and (min-width: 769px) {
+   .video-wrap .video-inner {
+    text-align: center;
+  }
+   .video-wrap video {
+    width: 80%;
+  }
+   .bookmark-wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+   .bookmark-wrap .bookmark-inner {
+    overflow-y: auto;
+  }
+   .bookmark-wrap .title,  .bookmark-wrap .label-wrap {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+   .bookmark-wrap .title {
+    position: absolute;
+    top: 30px;
+    left: 10%;
+    color: #453e3e;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 17px;
+    text-align: left;
+  }
+   .bookmark-wrap .add-bookmark {
+    left: -moz-calc(10% + 90px);
+    left: -webkit-calc(10% + 90px);
+    left: calc(10% + 90px);
+  }
+}
+@media screen and (min-width: 1025px) {
+   {
+    float: right;
+    width: 52%;
+    padding-left: 3%;
+    margin-top: 32px;
+    height: 100%;
+    margin-top: 0;
+  }
+   .video-wrap {
+    height: 67%;
+  }
+   .video-wrap .video-inner {
+    height: 100%;
+    text-align: center;
+  }
+   .video-wrap h2 {
+    padding-left: 40px !important;
+  }
+   .bookmark-wrap {
+    padding-bottom: 17px;
+  }
+   .bookmark-wrap .bookmark-inner {
+    overflow-y: auto;
+  }
+}
+@media screen and (min-width: 1501px) {
+   .video-wrap .video-inner {
+    padding: 15px 14px 0 14px !important;
+  }
+   .video-wrap video {
+    width: 650px !important;
+    height: 444px !important;
+  }
+   .video-wrap .controlbar {
+    margin-left: -325px !important;
+    width: 650px !important;
+  }
+   .video-wrap .timeline {
+    margin-left: -325px !important;
+    width: 650px !important;
+  }
+   .bookmark-wrap {
+    padding-top: 15px;
+  }
+   .bookmark-inner {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    position: relative;
+  }
+   .bookmark-inner .title {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    bottom: 0;
+    width: 17.2%;
+    padding-bottom: 0;
+  }
+   .bookmark-inner .label-wrap {
+    padding-left: 17.2%;
+    padding-right: 17.2%;
+    width: 100%;
+    height: 100%;
+  }
+   .bookmark-inner .label-wrap .label {
+    float: left;
+    width: 50%;
+    height: 49px;
+    padding-right: 19px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+  }
+   .bookmark-inner .label-wrap .label.ex {
+    padding-top: 18px;
+  }
+   .bookmark-inner .label-wrap .label .label-inner {
+    width: 100%;
+    height: 24px;
+    border-radius: 24px;
+    background-color: #a0a0a0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: left;
+  }
+   .bookmark-inner .label-wrap .label .label-inner i {
+    padding: 0 3px 0 10px;
+  }
+   .bookmark-inner .label-wrap .label .label-inner input {
+    width: -moz-calc(100% - 85px);
+    width: -webkit-calc(100% - 85px);
+    width: calc(100% - 85px);
+  }
+   .bookmark-inner .add-bookmark {
+    position: absolute;
+    right: 5px;
+    left: auto;
+    top: 11px;
+    bottom: 0;
+    width: 17.2%;
+  }
+}
+@media screen and (min-width: 1501px) {
+   {
+    min-width: 723px;
+  }
+}
+/***** End custom video control, from precious scss *****/
